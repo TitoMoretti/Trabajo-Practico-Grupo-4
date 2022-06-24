@@ -1,0 +1,128 @@
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\obj\Debug\Vista.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe.config
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.dll
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.dll
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.dll
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.pdb
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.dll.config
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.pdb
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.dll.config
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.xml
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\vitto\Documents\University\Segundo Año\Primer Cuatrimestre\Programación Orientada a Objetos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Vista.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo POO Grupo 4.exe
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo POO Grupo 4.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Trabajo POO Grupo 4.exe.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Trabajo POO Grupo 4.exe
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Trabajo POO Grupo 4.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Controladora.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Controladora.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Vista.csproj.GenerateResource.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Trabajo POO Grupo 4.exe.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Trabajo POO Grupo 4.exe
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Controladora.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Controladora.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Controladora.dll.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo POO Grupo 4.exe
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.5\obj\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Trabajo POO Grupo 4.exe.config
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Trabajo POO Grupo 4.exe
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Controladora.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\EntityFramework.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Modelo.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Controladora.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Controladora.dll.config
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Modelo.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\Modelo.dll.config
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\EntityFramework.xml
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo POO Grupo 4.exe
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Admin.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.AlterarUsuario.resources
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4-versi-n1.6\obj\Debug\Trabajo_POO_Grupo_4.Cliente.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Trabajo POO Grupo 4.exe.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Trabajo POO Grupo 4.exe
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Controladora.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Controladora.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Controladora.dll.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Admin.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.AlterarUsuario.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Cliente.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo POO Grupo 4.exe
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\obj\Debug\Trabajo POO Grupo 4.pdb

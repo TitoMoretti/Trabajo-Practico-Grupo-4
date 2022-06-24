@@ -1,0 +1,36 @@
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\obj\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-version1\Trabajo-Practico-POO-Grupo-4-version1\Modelo\obj\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\obj\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GITHUB\Trabajo-Practico-POO-Grupo-4-master\Trabajo-Practico-POO-Grupo-4-master\Modelo\obj\Debug\Modelo.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.dll
+C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.pdb

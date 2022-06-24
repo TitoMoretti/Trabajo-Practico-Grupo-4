@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Contexto" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ContextoContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Contexto.Usuario" />
+    <EntitySet Name="Grupos" EntityType="Contexto.Grupo" />
+    <AssociationSet Name="UsuarioGrupo" Association="Contexto.UsuarioGrupo">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Grupo" EntitySet="Grupos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Grupo" Relationship="Contexto.UsuarioGrupo" FromRole="Usuario" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Usuario" Relationship="Contexto.UsuarioGrupo" FromRole="Grupo" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="UsuarioGrupo">
+    <End Type="Contexto.Usuario" Role="Usuario" Multiplicity="*" />
+    <End Type="Contexto.Grupo" Role="Grupo" Multiplicity="*" />
+  </Association>
+</Schema>

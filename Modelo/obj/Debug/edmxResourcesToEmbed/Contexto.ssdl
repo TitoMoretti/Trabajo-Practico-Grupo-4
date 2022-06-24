@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Contexto.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ContextoStoreContainer">
+    <EntitySet Name="Usuarios" EntityType="Contexto.Store.Usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Grupos" EntityType="Contexto.Store.Grupos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsuarioGrupo" EntityType="Contexto.Store.UsuarioGrupo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_UsuarioGrupo_Usuario" Association="Contexto.Store.FK_UsuarioGrupo_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="UsuarioGrupo" EntitySet="UsuarioGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioGrupo_Grupo" Association="Contexto.Store.FK_UsuarioGrupo_Grupo">
+      <End Role="Grupo" EntitySet="Grupos" />
+      <End Role="UsuarioGrupo" EntitySet="UsuarioGrupo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grupos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UsuarioGrupo">
+    <Key>
+      <PropertyRef Name="Usuario_Id" />
+      <PropertyRef Name="Grupo_Id" />
+    </Key>
+    <Property Name="Usuario_Id" Type="int" Nullable="false" />
+    <Property Name="Grupo_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_UsuarioGrupo_Usuario">
+    <End Role="Usuario" Type="Contexto.Store.Usuarios" Multiplicity="1" />
+    <End Role="UsuarioGrupo" Type="Contexto.Store.UsuarioGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsuarioGrupo">
+        <PropertyRef Name="Usuario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioGrupo_Grupo">
+    <End Role="UsuarioGrupo" Type="Contexto.Store.UsuarioGrupo" Multiplicity="*" />
+    <End Role="Grupo" Type="Contexto.Store.Grupos" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsuarioGrupo">
+        <PropertyRef Name="Grupo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

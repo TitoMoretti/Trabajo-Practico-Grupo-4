@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a15b2bda-46a4-417b-a651-bb1c34164a23": {
+      "ProjectGuid": "a15b2bda-46a4-417b-a651-bb1c34164a23",
+      "DisplayName": "Vista",
+      "ColorIndex": 0
+    },
+    "571e0860-64ea-4f95-9064-0b4d94de1375": {
+      "ProjectGuid": "571e0860-64ea-4f95-9064-0b4d94de1375",
+      "DisplayName": "Controladora",
+      "ColorIndex": 1
+    },
+    "c2c7b7db-33bb-48d5-91e6-69b9c692dede": {
+      "ProjectGuid": "c2c7b7db-33bb-48d5-91e6-69b9c692dede",
+      "DisplayName": "Modelo",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
