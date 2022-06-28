@@ -34,3 +34,15 @@ C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debu
 C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.dll
 C:\Users\PC\source\repos\Trabajo-Practico-POO-Grupo-4-version1.7\Modelo\obj\Debug\Modelo.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb

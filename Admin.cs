@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -19,55 +20,26 @@ namespace Trabajo_POO_Grupo_4
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            /*
-            try
-            {
+            // TODO: This line of code loads data into the 'proyectoDataSet.ListadeCuentas' table. You can move, or remove it, as needed.
+            this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
 
-                List<Modelo.Usuario> listaUsuarios = Controladora.ControladoraUsuarios.obtener_instancia().Listar_Usuarios();
-                dgvGestionarUsuarios.DataSource = listaUsuarios;
-
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show("Error al cargar los usuario" + Ex.Message);
-                //Para cerrar el form cuando hay un error
-                //this.Close();
-            }
-            */
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
-            Registro register = new Registro();
-            this.Hide();
-            register.ShowDialog();
-            this.Show();
+            ConexionSQL agregar = new ConexionSQL();
+            agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+            dgvGestionarUsuarios.DataSource = agregar.actualizarlista();
         }
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
-            /*
-            Modelo.Usuario selected = dgvGestionarUsuarios.SelectedRows[0].DataBoundItem as Modelo.Usuario;
-            Controladora.ControladoraUsuarios.obtener_instancia().Eliminar_Usuario(selected);
-            dgvGestionarUsuarios.DataSource = null;
-            List<Modelo.Usuario> listaUsuarios = Controladora.ControladoraUsuarios.obtener_instancia().Listar_Usuarios();
-            dgvGestionarUsuarios.DataSource = listaUsuarios;
-            */
+
         }
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
-            
-            /*
-            int id = (Convert.ToInt32(dgvGestionarUsuarios.CurrentRow.Cells[0].Value));
-            Modelo.Usuario selected = Controladora.ControladoraUsuarios.obtener_instancia().Obtener_Usuario(id);
-            
-            //MODELO.Usuario selected = dgvGestionarUsuarios.SelectedRows[0].DataBoundItem as MODELO.Usuario;
 
-
-            AlterarUsuario modifyuser = new AlterarUsuario(selected);
-            modifyuser.Show();
-            */
         }
     }
 }
