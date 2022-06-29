@@ -40,5 +40,5 @@ Nos esforzamos para mejorar y hacer crecer nuestro proyecto 🚀
 
 ## 💭 Feedback
 
-Aquí podrá dejar su feedback, el equipo lo leerá a la brevedad 📬nagapark@gmail.com
+Aquí podrá dejar su feedback, el equipo lo leerá a la brevedad 📬nagaparkentertainment@gmail.com
 
