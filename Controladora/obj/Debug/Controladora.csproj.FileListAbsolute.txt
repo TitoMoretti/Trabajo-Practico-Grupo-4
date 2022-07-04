@@ -58,3 +58,18 @@ C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Controladora.dll.config
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Controladora.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Controladora.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\EntityFramework.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Modelo.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Modelo.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\Modelo.dll.config
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\EntityFramework.xml
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\obj\Debug\Controladora.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Controladora\obj\Debug\Controladora.pdb
