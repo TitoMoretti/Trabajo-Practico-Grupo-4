@@ -99,7 +99,7 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(16, 230);
+            this.btnCrear.Location = new System.Drawing.Point(105, 230);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(167, 60);
@@ -110,15 +110,15 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(103, 25);
+            this.txtNombre.Location = new System.Drawing.Point(287, 27);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(432, 32);
+            this.txtNombre.Size = new System.Drawing.Size(425, 32);
             this.txtNombre.TabIndex = 7;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(109, 63);
+            this.txtApellido.Location = new System.Drawing.Point(287, 63);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(425, 32);
@@ -126,27 +126,26 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(216, 101);
+            this.txtUsuario.Location = new System.Drawing.Point(287, 103);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(319, 32);
+            this.txtUsuario.Size = new System.Drawing.Size(425, 32);
             this.txtUsuario.TabIndex = 9;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(79, 139);
+            this.txtEmail.Location = new System.Drawing.Point(287, 141);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(456, 32);
+            this.txtEmail.Size = new System.Drawing.Size(425, 32);
             this.txtEmail.TabIndex = 10;
             // 
             // txtContra
             // 
-            this.txtContra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtContra.Location = new System.Drawing.Point(145, 177);
+            this.txtContra.Location = new System.Drawing.Point(287, 180);
             this.txtContra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(389, 32);
+            this.txtContra.Size = new System.Drawing.Size(425, 32);
             this.txtContra.TabIndex = 11;
             this.txtContra.Tag = "contraseña";
             this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
@@ -155,7 +154,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(369, 230);
+            this.btnCancelar.Location = new System.Drawing.Point(545, 230);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(167, 60);
@@ -166,7 +165,7 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(191, 292);
+            this.btnBorrar.Location = new System.Drawing.Point(327, 298);
             this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(167, 60);
@@ -193,11 +192,11 @@
             this.registrobox.Controls.Add(this.txtNombre);
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.registrobox.Location = new System.Drawing.Point(270, 15);
+            this.registrobox.Location = new System.Drawing.Point(155, 2);
             this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
             this.registrobox.Padding = new System.Windows.Forms.Padding(4);
-            this.registrobox.Size = new System.Drawing.Size(624, 361);
+            this.registrobox.Size = new System.Drawing.Size(850, 376);
             this.registrobox.TabIndex = 15;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Para crear una cuenta, por favor introduzca lo siguiente:";
@@ -208,7 +207,7 @@
             this.icoBtnOjo.IconColor = System.Drawing.Color.Black;
             this.icoBtnOjo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icoBtnOjo.IconSize = 35;
-            this.icoBtnOjo.Location = new System.Drawing.Point(494, 177);
+            this.icoBtnOjo.Location = new System.Drawing.Point(672, 183);
             this.icoBtnOjo.Name = "icoBtnOjo";
             this.icoBtnOjo.Size = new System.Drawing.Size(40, 32);
             this.icoBtnOjo.TabIndex = 16;

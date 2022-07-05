@@ -142,7 +142,6 @@ C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramewo
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.AssemblyReference.cache
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Admin.resources
-C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.AlterarUsuario.resources
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Cliente.resources
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
@@ -208,3 +207,5 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.exe
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.pdb
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.FAQ.resources

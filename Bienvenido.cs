@@ -17,11 +17,6 @@ namespace Trabajo_POO_Grupo_4
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Login iniciarsesion = new Login();
@@ -46,7 +41,9 @@ namespace Trabajo_POO_Grupo_4
         private void btnFAQ_Click(object sender, EventArgs e)
         {
             FAQ FAQ = new FAQ();
+            this.Hide();
             FAQ.ShowDialog();
+            this.Show();
         }
     }
 }
