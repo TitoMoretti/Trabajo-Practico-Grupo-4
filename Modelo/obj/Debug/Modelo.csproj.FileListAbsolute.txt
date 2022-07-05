@@ -46,3 +46,27 @@ C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
 C:\Users\vitto\source\repos\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\Modelo.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\Modelo.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\obj\Debug\Modelo.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\Modelo\obj\Debug\Modelo.pdb
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\Modelo.dll
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\Modelo.pdb
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.dll
+C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.pdb

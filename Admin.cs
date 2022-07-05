@@ -21,7 +21,7 @@ namespace Trabajo_POO_Grupo_4
         private void Admin_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'proyectoDataSet.ListadeCuentas' table. You can move, or remove it, as needed.
-            this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
+            //this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
 
         }
 
