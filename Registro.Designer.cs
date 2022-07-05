@@ -43,6 +43,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
+            this.icoBtnOjo = new FontAwesome.Sharp.IconButton();
             this.registrobox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,10 +51,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(5, 25);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(7, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
+            this.label2.Size = new System.Drawing.Size(84, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
@@ -61,10 +61,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(5, 56);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(7, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.Size = new System.Drawing.Size(91, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Apellido:";
             // 
@@ -72,10 +71,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(5, 87);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(7, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 15);
+            this.label4.Size = new System.Drawing.Size(191, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombre de Usuario:";
             // 
@@ -83,10 +81,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(5, 118);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(7, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 15);
+            this.label5.Size = new System.Drawing.Size(62, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Email:";
             // 
@@ -94,19 +91,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(5, 149);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(7, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 15);
+            this.label6.Size = new System.Drawing.Size(124, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Contraseña:";
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(12, 187);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrear.Location = new System.Drawing.Point(16, 230);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(125, 49);
+            this.btnCrear.Size = new System.Drawing.Size(167, 60);
             this.btnCrear.TabIndex = 6;
             this.btnCrear.Text = "Crear Cuenta";
             this.btnCrear.UseVisualStyleBackColor = true;
@@ -114,52 +110,55 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(77, 20);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Location = new System.Drawing.Point(103, 25);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(325, 27);
+            this.txtNombre.Size = new System.Drawing.Size(432, 32);
             this.txtNombre.TabIndex = 7;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(82, 51);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Location = new System.Drawing.Point(109, 63);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(320, 27);
+            this.txtApellido.Size = new System.Drawing.Size(425, 32);
             this.txtApellido.TabIndex = 8;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(162, 82);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(216, 101);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(240, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(319, 32);
             this.txtUsuario.TabIndex = 9;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(59, 113);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(79, 139);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(343, 27);
+            this.txtEmail.Size = new System.Drawing.Size(456, 32);
             this.txtEmail.TabIndex = 10;
             // 
             // txtContra
             // 
             this.txtContra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtContra.Location = new System.Drawing.Point(109, 144);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContra.Location = new System.Drawing.Point(145, 177);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContra.Name = "txtContra";
-            this.txtContra.PasswordChar = '*';
-            this.txtContra.Size = new System.Drawing.Size(293, 27);
+            this.txtContra.Size = new System.Drawing.Size(389, 32);
             this.txtContra.TabIndex = 11;
+            this.txtContra.Tag = "contraseña";
+            this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
+            this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
+            this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(277, 187);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(369, 230);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(125, 49);
+            this.btnCancelar.Size = new System.Drawing.Size(167, 60);
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -167,10 +166,10 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(143, 237);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBorrar.Location = new System.Drawing.Point(191, 292);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(125, 49);
+            this.btnBorrar.Size = new System.Drawing.Size(167, 60);
             this.btnBorrar.TabIndex = 13;
             this.btnBorrar.Text = "Borrar Datos";
             this.btnBorrar.UseVisualStyleBackColor = true;
@@ -179,6 +178,7 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.Transparent;
+            this.registrobox.Controls.Add(this.icoBtnOjo);
             this.registrobox.Controls.Add(this.label2);
             this.registrobox.Controls.Add(this.btnBorrar);
             this.registrobox.Controls.Add(this.label3);
@@ -193,24 +193,42 @@
             this.registrobox.Controls.Add(this.txtNombre);
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.registrobox.Location = new System.Drawing.Point(205, 12);
+            this.registrobox.Location = new System.Drawing.Point(270, 15);
+            this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
-            this.registrobox.Size = new System.Drawing.Size(407, 293);
+            this.registrobox.Padding = new System.Windows.Forms.Padding(4);
+            this.registrobox.Size = new System.Drawing.Size(624, 361);
             this.registrobox.TabIndex = 15;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Para crear una cuenta, por favor introduzca lo siguiente:";
             // 
+            // icoBtnOjo
+            // 
+            this.icoBtnOjo.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.icoBtnOjo.IconColor = System.Drawing.Color.Black;
+            this.icoBtnOjo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icoBtnOjo.IconSize = 35;
+            this.icoBtnOjo.Location = new System.Drawing.Point(494, 177);
+            this.icoBtnOjo.Name = "icoBtnOjo";
+            this.icoBtnOjo.Size = new System.Drawing.Size(40, 32);
+            this.icoBtnOjo.TabIndex = 16;
+            this.icoBtnOjo.Tag = "contraseña";
+            this.icoBtnOjo.UseVisualStyleBackColor = true;
+            this.icoBtnOjo.Click += new System.EventHandler(this.icoBtnOjo_Click);
+            this.icoBtnOjo.MouseEnter += new System.EventHandler(this.icoBtnOjo_MouseEnter);
+            this.icoBtnOjo.MouseLeave += new System.EventHandler(this.icoBtnOjo_MouseLeave);
+            // 
             // Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(817, 318);
+            this.ClientSize = new System.Drawing.Size(1083, 391);
             this.Controls.Add(this.registrobox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -237,5 +255,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.GroupBox registrobox;
+        private FontAwesome.Sharp.IconButton icoBtnOjo;
     }
 }

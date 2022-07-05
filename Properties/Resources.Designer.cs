@@ -63,6 +63,16 @@ namespace Trabajo_POO_Grupo_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap faq {
+            get {
+                object obj = ResourceManager.GetObject("faq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpaper {
             get {
                 object obj = ResourceManager.GetObject("wallpaper", resourceCulture);

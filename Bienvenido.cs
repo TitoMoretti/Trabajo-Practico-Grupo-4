@@ -42,5 +42,11 @@ namespace Trabajo_POO_Grupo_4
         {
             this.Close();
         }
+
+        private void btnFAQ_Click(object sender, EventArgs e)
+        {
+            FAQ FAQ = new FAQ();
+            FAQ.ShowDialog();
+        }
     }
 }
