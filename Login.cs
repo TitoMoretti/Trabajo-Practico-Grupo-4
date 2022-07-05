@@ -25,60 +25,36 @@ namespace Trabajo_POO_Grupo_4
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            bool valido = false;
-            valido = validaciones();
-            if (valido)
+            Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios();
+            int v1 = 0;
+            v1 = usuarios.validarLogin(txt_user.Text, txt_password.Text);
+            if (v1 == 1)
             {
-
-            }
-        }
-
-        private bool validaciones()
-        {
-            bool valido=false;
-            if (txt_user.Text==string.Empty)
-            {
-                MessageBox.Show("No se ha insertado ningún nombre de usuario. Por favor, revise la información y vuelva a intentarlo.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("No se ha insertado ningún nombre de usuario. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if (txt_password.Text == string.Empty)
+                if (v1 == 2)
                 {
                     MessageBox.Show("No se ha insertado ninguna contraseña. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    string password = txt_password.Text;
-                    Regex len = new Regex("^.{6,15}$");
-                    Regex num = new Regex("\\d");
-                    Regex alpha = new Regex("\\D");
+                    if (v1 == 3)
+                    {
+                        bool v2 = false;
+                        v2 = usuarios.loginear(txt_user.Text, txt_password.Text);
+                        if (v2)
+                        {
+                            Admin root = new Admin();
+                            this.Hide();
+                            root.ShowDialog();
+                            this.Close();
 
-                    if (len.IsMatch(password))
-                    {
-                        //Password Válido
-                        if (num.IsMatch(password))
-                        {
-                            if (alpha.IsMatch(password))
-                            {
-                                valido = true;
-                            }
-                            else
-                            {
-                                MessageBox.Show("No se ha insertado una contraseña valida. La contraseña debe incluir al menos una letra.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
                         }
-                        else
-                        {
-                            MessageBox.Show("No se ha insertado una contraseña valida. La contraseña debe incluir al menos un número.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se ha insertado una contraseña valida. La contraseña solo puede ser entre 6 a 15 caracteres.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-            return valido;
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
