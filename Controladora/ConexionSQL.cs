@@ -29,11 +29,22 @@ namespace Controladora
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Update into ListadeCuentas(Nombre,Apellido,Usuario,Email,Contrasena) values ('" + Nombre + "','" + Apellido + "','" + Usuario + "','" + Email + "','" + Contrasena + "')", conn);
+                SqlCommand cmd = new SqlCommand("update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "'where Usuario='" + Usuario + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 actualizarlista();
+            }
+        }
+
+        public void Eliminar(string Usuario)
+        {
+            using (SqlConnection conn = new SqlConnection(CadenaConexion))
+            {
+                SqlCommand cmd = new SqlCommand("delete from ListadeCuentas where Usuario =" + Usuario, conn);
+                cmd.CommandType = CommandType.Text;
+                conn.Open();
+                cmd.ExecuteNonQuery();
             }
         }
 

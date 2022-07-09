@@ -103,3 +103,18 @@ C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controlado
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb

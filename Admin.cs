@@ -34,12 +34,16 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
-
+            ConexionSQL eliminar = new ConexionSQL();
+            eliminar.Eliminar(txtUsuario.Text);
+            dgvGestionarUsuarios.DataSource = eliminar.actualizarlista();
         }
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
-
+            ConexionSQL modificar = new ConexionSQL();
+            modificar.Modificar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+            dgvGestionarUsuarios.DataSource = modificar.actualizarlista();
         }
     }
 }
