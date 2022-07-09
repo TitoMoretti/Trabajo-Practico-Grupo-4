@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -80,8 +81,10 @@ namespace Trabajo_POO_Grupo_4
                         MessageBox.Show("No se ha insertado una contraseña valida. La contraseña debe incluir al menos una letra.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         break;
                 case 10:
-                        MessageBox.Show("pulgar ARRIBA");
-                        break;
+                    string admin = "NO";
+                    ConexionSQL agregar = new ConexionSQL();
+                    agregar.Agregar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, admin);
+                    break;
             }
         }
         public void passwordCHAR(int caso)

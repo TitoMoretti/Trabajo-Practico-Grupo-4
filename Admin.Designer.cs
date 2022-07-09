@@ -30,9 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGestionarUsuarios = new System.Windows.Forms.DataGridView();
+            this.listadeCuentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoDataSet = new Trabajo_POO_Grupo_4.ProyectoDataSet();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
+            this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.checkBoxAdmin = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,19 +48,21 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.btnModificarUsuario = new System.Windows.Forms.Button();
-            this.proyectoDataSet = new Trabajo_POO_Grupo_4.ProyectoDataSet();
-            this.listadeCuentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listadeCuentasTableAdapter = new Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter();
+            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Administrador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtAdmin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).BeginInit();
-            this.registrobox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
+            this.registrobox.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvGestionarUsuarios
@@ -65,11 +70,13 @@
             this.dgvGestionarUsuarios.AutoGenerateColumns = false;
             this.dgvGestionarUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGestionarUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.N,
             this.nombreDataGridViewTextBoxColumn,
             this.apellidoDataGridViewTextBoxColumn,
             this.usuarioDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
-            this.contrasenaDataGridViewTextBoxColumn});
+            this.contrasenaDataGridViewTextBoxColumn,
+            this.Administrador});
             this.dgvGestionarUsuarios.DataSource = this.listadeCuentasBindingSource;
             this.dgvGestionarUsuarios.Location = new System.Drawing.Point(13, 13);
             this.dgvGestionarUsuarios.Name = "dgvGestionarUsuarios";
@@ -78,10 +85,20 @@
             this.dgvGestionarUsuarios.Size = new System.Drawing.Size(835, 505);
             this.dgvGestionarUsuarios.TabIndex = 0;
             // 
+            // listadeCuentasBindingSource
+            // 
+            this.listadeCuentasBindingSource.DataMember = "ListadeCuentas";
+            this.listadeCuentasBindingSource.DataSource = this.proyectoDataSet;
+            // 
+            // proyectoDataSet
+            // 
+            this.proyectoDataSet.DataSetName = "ProyectoDataSet";
+            this.proyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // btnAgregarUsuario
             // 
             this.btnAgregarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(14, 265);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(14, 320);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
             this.btnAgregarUsuario.Size = new System.Drawing.Size(127, 61);
             this.btnAgregarUsuario.TabIndex = 1;
@@ -92,7 +109,7 @@
             // btnEliminarUsuario
             // 
             this.btnEliminarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(407, 265);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(407, 320);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(127, 61);
             this.btnEliminarUsuario.TabIndex = 2;
@@ -103,6 +120,9 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.LightGray;
+            this.registrobox.Controls.Add(this.txtAdmin);
+            this.registrobox.Controls.Add(this.txtID);
+            this.registrobox.Controls.Add(this.label7);
             this.registrobox.Controls.Add(this.btnModificarUsuario);
             this.registrobox.Controls.Add(this.checkBoxAdmin);
             this.registrobox.Controls.Add(this.btnEliminarUsuario);
@@ -119,19 +139,30 @@
             this.registrobox.Controls.Add(this.txtNombre);
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.registrobox.Location = new System.Drawing.Point(855, 179);
+            this.registrobox.Location = new System.Drawing.Point(855, 115);
             this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
             this.registrobox.Padding = new System.Windows.Forms.Padding(4);
-            this.registrobox.Size = new System.Drawing.Size(543, 339);
+            this.registrobox.Size = new System.Drawing.Size(543, 403);
             this.registrobox.TabIndex = 17;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Datos del Usuario:";
             // 
+            // btnModificarUsuario
+            // 
+            this.btnModificarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(216, 320);
+            this.btnModificarUsuario.Name = "btnModificarUsuario";
+            this.btnModificarUsuario.Size = new System.Drawing.Size(127, 61);
+            this.btnModificarUsuario.TabIndex = 15;
+            this.btnModificarUsuario.Text = "Modificar Usuario";
+            this.btnModificarUsuario.UseVisualStyleBackColor = true;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click_1);
+            // 
             // checkBoxAdmin
             // 
             this.checkBoxAdmin.AutoSize = true;
-            this.checkBoxAdmin.Location = new System.Drawing.Point(14, 224);
+            this.checkBoxAdmin.Location = new System.Drawing.Point(233, 277);
             this.checkBoxAdmin.Name = "checkBoxAdmin";
             this.checkBoxAdmin.Size = new System.Drawing.Size(79, 24);
             this.checkBoxAdmin.TabIndex = 14;
@@ -236,29 +267,17 @@
             this.txtApellido.Size = new System.Drawing.Size(425, 32);
             this.txtApellido.TabIndex = 8;
             // 
-            // btnModificarUsuario
-            // 
-            this.btnModificarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnModificarUsuario.Location = new System.Drawing.Point(207, 265);
-            this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(127, 61);
-            this.btnModificarUsuario.TabIndex = 15;
-            this.btnModificarUsuario.Text = "Modificar Usuario";
-            this.btnModificarUsuario.UseVisualStyleBackColor = true;
-            // 
-            // proyectoDataSet
-            // 
-            this.proyectoDataSet.DataSetName = "ProyectoDataSet";
-            this.proyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // listadeCuentasBindingSource
-            // 
-            this.listadeCuentasBindingSource.DataMember = "ListadeCuentas";
-            this.listadeCuentasBindingSource.DataSource = this.proyectoDataSet;
-            // 
             // listadeCuentasTableAdapter
             // 
             this.listadeCuentasTableAdapter.ClearBeforeFill = true;
+            // 
+            // N
+            // 
+            this.N.DataPropertyName = "Nombre";
+            this.N.HeaderText = "N";
+            this.N.MinimumWidth = 6;
+            this.N.Name = "N";
+            this.N.Width = 125;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -300,6 +319,41 @@
             this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
             this.contrasenaDataGridViewTextBoxColumn.Width = 125;
             // 
+            // Administrador
+            // 
+            this.Administrador.DataPropertyName = "Nombre";
+            this.Administrador.HeaderText = "Administrador";
+            this.Administrador.MinimumWidth = 6;
+            this.Administrador.Name = "Administrador";
+            this.Administrador.Width = 125;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(7, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(193, 18);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Número de Usuario:";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(215, 216);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(319, 32);
+            this.txtID.TabIndex = 17;
+            // 
+            // txtAdmin
+            // 
+            this.txtAdmin.Location = new System.Drawing.Point(339, 269);
+            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAdmin.Name = "txtAdmin";
+            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
+            this.txtAdmin.TabIndex = 18;
+            this.txtAdmin.Visible = false;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -316,10 +370,10 @@
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();
             this.registrobox.ResumeLayout(false);
             this.registrobox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,10 +400,15 @@
         private ProyectoDataSet proyectoDataSet;
         private System.Windows.Forms.BindingSource listadeCuentasBindingSource;
         private ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter listadeCuentasTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contrasenaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Administrador;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtAdmin;
     }
 }

@@ -13,11 +13,11 @@ namespace Controladora
     {
         private string CadenaConexion = "Data Source=LAPTOP-SANTI;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
 
-        public void Agregar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
+        public void Agregar(string N, string Nombre, string Apellido, string Usuario, string Email, string Contrasena, string Administrador)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Insert into ListadeCuentas(Nombre,Apellido,Usuario,Email,Contrasena) values ('" + Nombre + "','" + Apellido + "','" + Usuario + "','" + Email + "','" + Contrasena + "')", conn);
+                SqlCommand cmd = new SqlCommand("Insert into ListadeCuentas(N,Nombre,Apellido,Usuario,Email,Contrasena,Administrador) values ('" + N + "','" + Nombre + "','" + Apellido + "','" + Usuario + "','" + Email + "','" + Contrasena + "','" + Administrador + "')", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -25,11 +25,11 @@ namespace Controladora
             }   
         }
 
-        public void Modificar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
+        public void Modificar(string N, string Nombre, string Apellido, string Usuario, string Email, string Contrasena, string Administrador)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "'where Usuario='" + Usuario + "'", conn);
+                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set N= '" + N + "', Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "', Administrador='" + Administrador + "' where N='" + N + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -37,14 +37,15 @@ namespace Controladora
             }
         }
 
-        public void Eliminar(string Usuario)
+        public void Eliminar(string N)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("delete from ListadeCuentas where Usuario =" + Usuario, conn);
+                SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where N='" + N + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
+                actualizarlista();
             }
         }
 

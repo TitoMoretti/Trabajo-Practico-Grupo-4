@@ -21,28 +21,28 @@ namespace Trabajo_POO_Grupo_4
         private void Admin_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'proyectoDataSet.ListadeCuentas' table. You can move, or remove it, as needed.
-            //this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
+            this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
 
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
             ConexionSQL agregar = new ConexionSQL();
-            agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+            agregar.Agregar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
             dgvGestionarUsuarios.DataSource = agregar.actualizarlista();
         }
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
             ConexionSQL eliminar = new ConexionSQL();
-            eliminar.Eliminar(txtUsuario.Text);
+            eliminar.Eliminar(txtID.Text);
             dgvGestionarUsuarios.DataSource = eliminar.actualizarlista();
         }
 
-        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        private void btnModificarUsuario_Click_1(object sender, EventArgs e)
         {
             ConexionSQL modificar = new ConexionSQL();
-            modificar.Modificar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+            modificar.Modificar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
             dgvGestionarUsuarios.DataSource = modificar.actualizarlista();
         }
     }
