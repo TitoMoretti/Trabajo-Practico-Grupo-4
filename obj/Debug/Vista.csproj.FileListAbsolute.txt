@@ -208,3 +208,31 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.exe
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.pdb
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\bin\Debug\FontAwesome.Sharp.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\FontAwesome.Sharp.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Controladora.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Admin.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Bienvenido.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Cliente.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.FAQ.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Login.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Properties.Resources.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.Registro.resources
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.GenerateResource.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CopyComplete
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
