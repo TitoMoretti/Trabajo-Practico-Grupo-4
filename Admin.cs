@@ -45,5 +45,12 @@ namespace Trabajo_POO_Grupo_4
             modificar.Modificar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
             dgvGestionarUsuarios.DataSource = modificar.actualizarlista();
         }
+        private void txtID_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

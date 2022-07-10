@@ -4,30 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Controladora;
 
 namespace Controladora
 {
     public class ControladoraUsuarios
     {
-        public bool loginear(string user,string contraseña)
-        {
-            bool valido = false;
-            if(user=="admin" && contraseña == "admin")
-            {
-                valido = true;
-            }
-            return valido;
-        }
-        public int validarLogin(string user,string contraseña)
+        public int validarLogin(string Usuario,string Contrasena)
         {
             int valido = 0;
-            if (user == string.Empty)
+            if (Usuario == string.Empty)
             {
                 valido = 0 + 1;
             }
             else
             {
-                if (contraseña == string.Empty)
+                if (Contrasena == string.Empty)
                 {
                     valido = 0 + 2;
                 }
@@ -38,28 +30,28 @@ namespace Controladora
             }
             return valido;
         }
-        public int validarRegister(string nombre, string apellido, string user, string email, string contraseña)
+        public int validarRegister(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             int valido = 0;
-            if (nombre == string.Empty)
+            if (Nombre == string.Empty)
             {
                 valido = 0 + 1;
             }
             else
             {
-                if (apellido == string.Empty)
+                if (Apellido == string.Empty)
                 {
                     valido = 0 + 2;
                 }
                 else
                 {
-                    if (user == string.Empty)
+                    if (Usuario == string.Empty)
                     {
                         valido = 0 + 3;
                     }
                     else
                     {
-                        if (email == string.Empty)
+                        if (Email == string.Empty)
                         {
                             valido = 0 + 4;
                         }
@@ -68,7 +60,7 @@ namespace Controladora
                             Regex mRegxExpression;
                             mRegxExpression = new Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
 
-                            if (!mRegxExpression.IsMatch(email))
+                            if (!mRegxExpression.IsMatch(Email))
                             {
                                 //Email no válido
                                 valido = 0 + 5;
@@ -76,13 +68,13 @@ namespace Controladora
                             else
                             {
                                 //Email válido
-                                if (contraseña == string.Empty)
+                                if (Contrasena == string.Empty)
                                 {
                                     valido = 0 + 6;
                                 }
                                 else
                                 {
-                                    string password = contraseña;
+                                    string password = Contrasena;
                                     Regex len = new Regex("^.{5,15}$");
                                     Regex num = new Regex("\\d");
                                     Regex alpha = new Regex("\\D");

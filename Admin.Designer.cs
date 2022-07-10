@@ -30,11 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGestionarUsuarios = new System.Windows.Forms.DataGridView();
+            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Administrador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listadeCuentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoDataSet = new Trabajo_POO_Grupo_4.ProyectoDataSet();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
+            this.txtAdmin = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.checkBoxAdmin = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,16 +59,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.listadeCuentasTableAdapter = new Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter();
-            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Administrador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtAdmin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -84,6 +84,62 @@
             this.dgvGestionarUsuarios.RowTemplate.Height = 24;
             this.dgvGestionarUsuarios.Size = new System.Drawing.Size(835, 505);
             this.dgvGestionarUsuarios.TabIndex = 0;
+            // 
+            // N
+            // 
+            this.N.DataPropertyName = "Nombre";
+            this.N.HeaderText = "N";
+            this.N.MinimumWidth = 6;
+            this.N.Name = "N";
+            this.N.Width = 125;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // apellidoDataGridViewTextBoxColumn
+            // 
+            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
+            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
+            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
+            this.apellidoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // usuarioDataGridViewTextBoxColumn
+            // 
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            this.usuarioDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // contrasenaDataGridViewTextBoxColumn
+            // 
+            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
+            this.contrasenaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // Administrador
+            // 
+            this.Administrador.DataPropertyName = "Nombre";
+            this.Administrador.HeaderText = "Administrador";
+            this.Administrador.MinimumWidth = 6;
+            this.Administrador.Name = "Administrador";
+            this.Administrador.Width = 125;
             // 
             // listadeCuentasBindingSource
             // 
@@ -147,6 +203,34 @@
             this.registrobox.TabIndex = 17;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Datos del Usuario:";
+            // 
+            // txtAdmin
+            // 
+            this.txtAdmin.Location = new System.Drawing.Point(339, 269);
+            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAdmin.Name = "txtAdmin";
+            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
+            this.txtAdmin.TabIndex = 18;
+            this.txtAdmin.Visible = false;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(215, 216);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(319, 32);
+            this.txtID.TabIndex = 17;
+            this.txtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(7, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(193, 18);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Número de Usuario:";
             // 
             // btnModificarUsuario
             // 
@@ -270,89 +354,6 @@
             // listadeCuentasTableAdapter
             // 
             this.listadeCuentasTableAdapter.ClearBeforeFill = true;
-            // 
-            // N
-            // 
-            this.N.DataPropertyName = "Nombre";
-            this.N.HeaderText = "N";
-            this.N.MinimumWidth = 6;
-            this.N.Name = "N";
-            this.N.Width = 125;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidoDataGridViewTextBoxColumn
-            // 
-            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // contrasenaDataGridViewTextBoxColumn
-            // 
-            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
-            this.contrasenaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // Administrador
-            // 
-            this.Administrador.DataPropertyName = "Nombre";
-            this.Administrador.HeaderText = "Administrador";
-            this.Administrador.MinimumWidth = 6;
-            this.Administrador.Name = "Administrador";
-            this.Administrador.Width = 125;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(7, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 18);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Número de Usuario:";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(215, 216);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(319, 32);
-            this.txtID.TabIndex = 17;
-            // 
-            // txtAdmin
-            // 
-            this.txtAdmin.Location = new System.Drawing.Point(339, 269);
-            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAdmin.Name = "txtAdmin";
-            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
-            this.txtAdmin.TabIndex = 18;
-            this.txtAdmin.Visible = false;
             // 
             // Admin
             // 

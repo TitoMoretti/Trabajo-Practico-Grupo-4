@@ -43,9 +43,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
-            this.icoBtnOjo = new FontAwesome.Sharp.IconButton();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtAdmin = new System.Windows.Forms.TextBox();
             this.registrobox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,9 +149,6 @@
             this.txtContra.Size = new System.Drawing.Size(425, 32);
             this.txtContra.TabIndex = 11;
             this.txtContra.Tag = "contraseña";
-            this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
-            this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
-            this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
             // 
             // btnCancelar
             // 
@@ -179,9 +175,8 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.Transparent;
+            this.registrobox.Controls.Add(this.txtAdmin);
             this.registrobox.Controls.Add(this.txtID);
-            this.registrobox.Controls.Add(this.label7);
-            this.registrobox.Controls.Add(this.icoBtnOjo);
             this.registrobox.Controls.Add(this.label2);
             this.registrobox.Controls.Add(this.btnBorrar);
             this.registrobox.Controls.Add(this.label3);
@@ -197,48 +192,32 @@
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
             this.registrobox.Location = new System.Drawing.Point(349, 15);
-            this.registrobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
-            this.registrobox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registrobox.Padding = new System.Windows.Forms.Padding(4);
             this.registrobox.Size = new System.Drawing.Size(874, 441);
             this.registrobox.TabIndex = 15;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Para crear una cuenta, por favor introduzca lo siguiente:";
             // 
-            // icoBtnOjo
-            // 
-            this.icoBtnOjo.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.icoBtnOjo.IconColor = System.Drawing.Color.Black;
-            this.icoBtnOjo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoBtnOjo.IconSize = 35;
-            this.icoBtnOjo.Location = new System.Drawing.Point(672, 183);
-            this.icoBtnOjo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.icoBtnOjo.Name = "icoBtnOjo";
-            this.icoBtnOjo.Size = new System.Drawing.Size(40, 32);
-            this.icoBtnOjo.TabIndex = 16;
-            this.icoBtnOjo.Tag = "contraseña";
-            this.icoBtnOjo.UseVisualStyleBackColor = true;
-            this.icoBtnOjo.Click += new System.EventHandler(this.icoBtnOjo_Click);
-            this.icoBtnOjo.MouseEnter += new System.EventHandler(this.icoBtnOjo_MouseEnter);
-            this.icoBtnOjo.MouseLeave += new System.EventHandler(this.icoBtnOjo_MouseLeave);
-            // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(287, 223);
+            this.txtID.Location = new System.Drawing.Point(424, 247);
             this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(425, 32);
+            this.txtID.Size = new System.Drawing.Size(30, 32);
             this.txtID.TabIndex = 19;
+            this.txtID.Visible = false;
             // 
-            // label7
+            // txtAdmin
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(7, 227);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 18);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Número de Usuario:";
+            this.txtAdmin.Location = new System.Drawing.Point(252, 247);
+            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAdmin.Name = "txtAdmin";
+            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
+            this.txtAdmin.TabIndex = 20;
+            this.txtAdmin.Text = "NO";
+            this.txtAdmin.Visible = false;
             // 
             // Registro
             // 
@@ -277,8 +256,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.GroupBox registrobox;
-        private FontAwesome.Sharp.IconButton icoBtnOjo;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtAdmin;
     }
 }
