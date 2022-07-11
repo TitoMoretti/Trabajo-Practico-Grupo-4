@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
+using System.Data.SqlClient;
 
 namespace Trabajo_POO_Grupo_4
 {

@@ -43,7 +43,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
-            this.icoBtnOjo = new FontAwesome.Sharp.IconButton();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtAdmin = new System.Windows.Forms.TextBox();
             this.registrobox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(105, 230);
+            this.btnCrear.Location = new System.Drawing.Point(37, 276);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(167, 60);
@@ -134,7 +135,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(287, 141);
+            this.txtEmail.Location = new System.Drawing.Point(287, 142);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(425, 32);
@@ -148,13 +149,10 @@
             this.txtContra.Size = new System.Drawing.Size(425, 32);
             this.txtContra.TabIndex = 11;
             this.txtContra.Tag = "contraseña";
-            this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
-            this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
-            this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(545, 230);
+            this.btnCancelar.Location = new System.Drawing.Point(498, 276);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(167, 60);
@@ -165,7 +163,7 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(327, 298);
+            this.btnBorrar.Location = new System.Drawing.Point(268, 349);
             this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(167, 60);
@@ -177,7 +175,8 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.Transparent;
-            this.registrobox.Controls.Add(this.icoBtnOjo);
+            this.registrobox.Controls.Add(this.txtAdmin);
+            this.registrobox.Controls.Add(this.txtID);
             this.registrobox.Controls.Add(this.label2);
             this.registrobox.Controls.Add(this.btnBorrar);
             this.registrobox.Controls.Add(this.label3);
@@ -192,30 +191,33 @@
             this.registrobox.Controls.Add(this.txtNombre);
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.registrobox.Location = new System.Drawing.Point(155, 2);
+            this.registrobox.Location = new System.Drawing.Point(349, 15);
             this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
             this.registrobox.Padding = new System.Windows.Forms.Padding(4);
-            this.registrobox.Size = new System.Drawing.Size(850, 376);
+            this.registrobox.Size = new System.Drawing.Size(874, 441);
             this.registrobox.TabIndex = 15;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Para crear una cuenta, por favor introduzca lo siguiente:";
             // 
-            // icoBtnOjo
+            // txtID
             // 
-            this.icoBtnOjo.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.icoBtnOjo.IconColor = System.Drawing.Color.Black;
-            this.icoBtnOjo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoBtnOjo.IconSize = 35;
-            this.icoBtnOjo.Location = new System.Drawing.Point(672, 183);
-            this.icoBtnOjo.Name = "icoBtnOjo";
-            this.icoBtnOjo.Size = new System.Drawing.Size(40, 32);
-            this.icoBtnOjo.TabIndex = 16;
-            this.icoBtnOjo.Tag = "contraseña";
-            this.icoBtnOjo.UseVisualStyleBackColor = true;
-            this.icoBtnOjo.Click += new System.EventHandler(this.icoBtnOjo_Click);
-            this.icoBtnOjo.MouseEnter += new System.EventHandler(this.icoBtnOjo_MouseEnter);
-            this.icoBtnOjo.MouseLeave += new System.EventHandler(this.icoBtnOjo_MouseLeave);
+            this.txtID.Location = new System.Drawing.Point(424, 247);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(30, 32);
+            this.txtID.TabIndex = 19;
+            this.txtID.Visible = false;
+            // 
+            // txtAdmin
+            // 
+            this.txtAdmin.Location = new System.Drawing.Point(252, 247);
+            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAdmin.Name = "txtAdmin";
+            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
+            this.txtAdmin.TabIndex = 20;
+            this.txtAdmin.Text = "NO";
+            this.txtAdmin.Visible = false;
             // 
             // Registro
             // 
@@ -223,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1083, 391);
+            this.ClientSize = new System.Drawing.Size(1415, 513);
             this.Controls.Add(this.registrobox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -254,6 +256,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.GroupBox registrobox;
-        private FontAwesome.Sharp.IconButton icoBtnOjo;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtAdmin;
     }
 }
