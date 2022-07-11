@@ -23,5 +23,15 @@ namespace Trabajo_POO_Grupo_4
             this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

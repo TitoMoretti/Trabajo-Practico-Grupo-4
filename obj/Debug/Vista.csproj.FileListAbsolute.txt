@@ -236,3 +236,4 @@ C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\obj\Debug\
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CopyComplete
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.facturacion.resources

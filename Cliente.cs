@@ -21,5 +21,18 @@ namespace Trabajo_POO_Grupo_4
         {
             this.Close();
         }
+
+        private void btnComprarTickets_Click(object sender, EventArgs e)
+        {
+            facturacion Facturar= new facturacion();
+            this.Hide();
+            Facturar.ShowDialog();
+            this.Show();
+        }
+
+        private void BoxCliente_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
