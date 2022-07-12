@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
+using System.Data.SqlClient;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -20,6 +22,19 @@ namespace Trabajo_POO_Grupo_4
         private void btnCerrarSesión_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnComprarTickets_Click(object sender, EventArgs e)
+        {
+            facturacion Facturar= new facturacion();
+            this.Hide();
+            Facturar.ShowDialog();
+            this.Show();
+        }
+
+        private void BoxCliente_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -70,6 +70,7 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.dll
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Modelo\obj\Debug\Modelo.pdb
+<<<<<<< HEAD
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
@@ -82,3 +83,41 @@ D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRA
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
+=======
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
+>>>>>>> c5c317e25980832f02c00b92f82fa917928152f3

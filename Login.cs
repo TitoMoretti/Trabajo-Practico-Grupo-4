@@ -8,6 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Controladora;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -25,9 +27,9 @@ namespace Trabajo_POO_Grupo_4
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios();
-            int v1 = 0;
-            v1 = usuarios.validarLogin(txt_user.Text, txt_password.Text);
+            Controladora.ConexionSQL usuarios = new Controladora.ConexionSQL();
+            Controladora.ControladoraUsuarios user = new Controladora.ControladoraUsuarios();
+            int v1 = user.validarLogin(txt_user.Text, txt_password.Text);
             if (v1 == 1)
             {
                 MessageBox.Show("No se ha insertado ningún nombre de usuario. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -51,6 +53,10 @@ namespace Trabajo_POO_Grupo_4
                             root.ShowDialog();
                             this.Close();
 
+                        }
+                        else
+                        {
+                            user.validarLogin(txt_user.Text, txt_password.Text);
                         }
                     }
                 }

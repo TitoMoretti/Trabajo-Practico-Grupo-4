@@ -117,7 +117,6 @@
             this.Name = "Bienvenido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Cuentas Nagapark";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.bienvenidobox.ResumeLayout(false);
             this.ResumeLayout(false);
 

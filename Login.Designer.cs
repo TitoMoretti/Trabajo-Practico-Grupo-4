@@ -44,7 +44,7 @@
             // txt_user
             // 
             this.txt_user.Location = new System.Drawing.Point(109, 26);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_user.Margin = new System.Windows.Forms.Padding(4);
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(236, 32);
             this.txt_user.TabIndex = 0;
@@ -52,7 +52,7 @@
             // txt_password
             // 
             this.txt_password.Location = new System.Drawing.Point(149, 66);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(196, 32);
@@ -84,7 +84,7 @@
             // 
             this.btn_login.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
             this.btn_login.Location = new System.Drawing.Point(96, 118);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(167, 60);
             this.btn_login.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             this.btnCrear.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
             this.btnCrear.Location = new System.Drawing.Point(96, 218);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(167, 60);
             this.btnCrear.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.Location = new System.Drawing.Point(96, 286);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(167, 60);
             this.btnCancelar.TabIndex = 6;
@@ -130,9 +130,9 @@
             this.loginbox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
             this.loginbox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.loginbox.Location = new System.Drawing.Point(177, 16);
-            this.loginbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginbox.Margin = new System.Windows.Forms.Padding(4);
             this.loginbox.Name = "loginbox";
-            this.loginbox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginbox.Padding = new System.Windows.Forms.Padding(4);
             this.loginbox.Size = new System.Drawing.Size(355, 356);
             this.loginbox.TabIndex = 7;
             this.loginbox.TabStop = false;
@@ -158,7 +158,7 @@
             this.Controls.Add(this.loginbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

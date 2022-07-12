@@ -88,6 +88,7 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.dll
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.pdb
+<<<<<<< HEAD
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
@@ -103,3 +104,65 @@ D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRA
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+=======
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+C:\Users\PC\source\repos\xczx\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+>>>>>>> c5c317e25980832f02c00b92f82fa917928152f3
