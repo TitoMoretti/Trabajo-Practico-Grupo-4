@@ -18,7 +18,7 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
-        
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,6 +40,7 @@ namespace Trabajo_POO_Grupo_4
             txtUsuario.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtContra.Text = string.Empty;
+            btnOjitoCerrado.Enabled=false;
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -49,7 +50,7 @@ namespace Trabajo_POO_Grupo_4
             user.ContraLogin(txtContra.Text);
             Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios();
             int v1 = usuarios.validarRegister(txtNombre.Text,txtApellido.Text,txtUsuario.Text,txtEmail.Text,txtContra.Text);
-            switch(v1)
+            switch (v1)
             {
                 case 1:
                     MessageBox.Show("No se ha insertado ningún nombre. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -79,15 +80,28 @@ namespace Trabajo_POO_Grupo_4
                     MessageBox.Show("No se ha insertado una contraseña valida. La contraseña debe incluir al menos una letra.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case 10:
-                    for (int i = 0; i < 10000; i++)
-                    {
-                        txtID.Text = i.ToString();
-                    }
                     ConexionSQL agregar = new ConexionSQL();
-                    agregar.Agregar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
-                    MessageBox.Show("Registro con éxito");
+                    agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+                    MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Login login = new Login();
+                    this.Hide();
+                    login.ShowDialog();
+                    this.Close();
                     break;
             }
+        }
+
+        public void btnOjito_Click(object sender, EventArgs e)
+        {
+            string c = txtContra.Text;
+            txtContra.Text = "***************";
+            btnOjito.Enabled= false;
+            btnOjitoCerrado.Enabled = true;
+        }
+        public void btnOjitoCerrado_Click(object sender, EventArgs e)
+        {
+            //hacer código para mostrar texbox la contraseña
+            btnOjito.Enabled = true;
         }
     }
 }

@@ -43,8 +43,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtAdmin = new System.Windows.Forms.TextBox();
+            this.btnOjitoCerrado = new System.Windows.Forms.Button();
+            this.btnOjito = new System.Windows.Forms.Button();
             this.registrobox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,8 +175,8 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.Transparent;
-            this.registrobox.Controls.Add(this.txtAdmin);
-            this.registrobox.Controls.Add(this.txtID);
+            this.registrobox.Controls.Add(this.btnOjitoCerrado);
+            this.registrobox.Controls.Add(this.btnOjito);
             this.registrobox.Controls.Add(this.label2);
             this.registrobox.Controls.Add(this.btnBorrar);
             this.registrobox.Controls.Add(this.label3);
@@ -200,24 +200,27 @@
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Para crear una cuenta, por favor introduzca lo siguiente:";
             // 
-            // txtID
+            // btnOjitoCerrado
             // 
-            this.txtID.Location = new System.Drawing.Point(424, 247);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(30, 32);
-            this.txtID.TabIndex = 19;
-            this.txtID.Visible = false;
+            this.btnOjitoCerrado.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.Ojito_cerrado;
+            this.btnOjitoCerrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOjitoCerrado.Location = new System.Drawing.Point(201, 178);
+            this.btnOjitoCerrado.Name = "btnOjitoCerrado";
+            this.btnOjitoCerrado.Size = new System.Drawing.Size(37, 34);
+            this.btnOjitoCerrado.TabIndex = 22;
+            this.btnOjitoCerrado.UseVisualStyleBackColor = true;
+            this.btnOjitoCerrado.Click += new System.EventHandler(this.btnOjitoCerrado_Click);
             // 
-            // txtAdmin
+            // btnOjito
             // 
-            this.txtAdmin.Location = new System.Drawing.Point(252, 247);
-            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAdmin.Name = "txtAdmin";
-            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
-            this.txtAdmin.TabIndex = 20;
-            this.txtAdmin.Text = "NO";
-            this.txtAdmin.Visible = false;
+            this.btnOjito.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.ojito;
+            this.btnOjito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOjito.Location = new System.Drawing.Point(244, 178);
+            this.btnOjito.Name = "btnOjito";
+            this.btnOjito.Size = new System.Drawing.Size(37, 34);
+            this.btnOjito.TabIndex = 21;
+            this.btnOjito.UseVisualStyleBackColor = true;
+            this.btnOjito.Click += new System.EventHandler(this.btnOjito_Click);
             // 
             // Registro
             // 
@@ -256,7 +259,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.GroupBox registrobox;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtAdmin;
+        private System.Windows.Forms.Button btnOjito;
+        private System.Windows.Forms.Button btnOjitoCerrado;
     }
 }

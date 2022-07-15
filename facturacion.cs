@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Trabajo_POO_Grupo_4
 {
-    public partial class facturacion : Form
+    public partial class Facturacion : Form
     {
-        public facturacion()
+        public Facturacion()
         {
             InitializeComponent();
         }
