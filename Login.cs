@@ -45,20 +45,26 @@ namespace Trabajo_POO_Grupo_4
                 {
                     if (v1 == 3)
                     {
-                        bool v2 = false;
-                        v2 = usuarios.loginear(txt_user.Text, txt_password.Text);
-                        if (v2)
+                        try
                         {
-                            Admin root = new Admin();
-                            this.Hide();
-                            root.ShowDialog();
-                            this.Close();
-
+                            bool v2 = false;
+                            v2 = usuarios.loginAdminlocal(txt_user.Text, txt_password.Text);
+                            if (v2)
+                            {
+                                Admin root = new Admin();
+                                this.Hide();
+                                root.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                //código para buscar en el SQL los datos y de encontrarlos, que vaya a la ventana de admin o facturas.
+                            }
                         }
-                        else
+                        catch (Exception)
                         {
-                            user.validarLogin(txt_user.Text, txt_password.Text);
-                        }
+                            MessageBox.Show("Ha ocurrido un problema al momento de iniciar sesión con su cuenta. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }  
                     }
                 }
             }

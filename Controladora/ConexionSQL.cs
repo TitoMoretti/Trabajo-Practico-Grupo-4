@@ -66,7 +66,6 @@ namespace Controladora
             SqlConnection conn = new SqlConnection(CadenaConexion);
             try
             {
-
                 SqlCommand user = new SqlCommand("Select * from ListadeCuentas where Usuario='" + Usuario + "'", conn);
                 SqlDataReader rta;
                 rta = user.ExecuteReader();
@@ -87,7 +86,6 @@ namespace Controladora
             SqlConnection conn = new SqlConnection(CadenaConexion);
             try
             {
-
                 SqlCommand pass = new SqlCommand("Select * from ListadeCuentas where Contrasena='" + Contrasena + "'", conn);
                 SqlDataReader rta;
                 rta = pass.ExecuteReader();
@@ -103,7 +101,7 @@ namespace Controladora
                 return false;
             }
         }
-        public bool loginear(string Usuario, string Contrasena)
+        public bool loginAdminlocal(string Usuario, string Contrasena)
         {
             bool valido = false;
             if (Usuario == "admin" && Contrasena == "admin")

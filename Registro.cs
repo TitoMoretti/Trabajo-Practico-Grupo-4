@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
+using System.Net.Mail;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -81,14 +82,44 @@ namespace Trabajo_POO_Grupo_4
                     MessageBox.Show("No se ha insertado una contraseña valida. La contraseña debe incluir al menos una letra.\nPor favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case 10:
-                    ConexionSQL agregar = new ConexionSQL();
-                    agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
-                    MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Login login = new Login();
-                    this.Hide();
-                    login.ShowDialog();
-                    this.Close();
-                    break;
+                    MailMessage msg = new MailMessage();
+                    msg.To.Add(txtEmail.Text);
+                    msg.Subject = "NagaPark: Se ha creado una cuenta con este correo electrónico";
+                    msg.SubjectEncoding = Encoding.UTF8;
+                    msg.Body = "Hola!!! Queremos informarle que se ha creado una cuenta de empleado para el parque NagaPark con los siguientes datos: <br><br>Nombre: " +txtNombre.Text+ "<br>Apellido: " +txtApellido.Text+ "<br>Nombre de Usuario: " +txtUsuario.Text+ "<br>Email: " + txtEmail.Text+ "<br>Contraseña:" + txtContra.Text+ "<br><br>Ante cualquier duda sobre la cuenta, no dude en visitar nuestra oficina de atención para recibir más información. <br><br>Esperamos que tenga un buen día y saludos desde NagaPark!<br><br>Nagatoro Ichirō";
+                    msg.BodyEncoding = Encoding.UTF8;
+                    msg.IsBodyHtml = true;
+
+                    msg.From = new MailAddress("nagaparkentertainment@gmail.com");
+                    SmtpClient cliente = new SmtpClient();
+                    cliente.Credentials = new System.Net.NetworkCredential("nagaparkentertainment@gmail.com", "icoelpvrwnoankop"); 
+                    cliente.Port = 587;
+                    cliente.EnableSsl = true;
+                    cliente.Host = "smtp.gmail.com";
+                    try
+                    {
+                        cliente.Send(msg);
+                        try
+                        {
+                            ConexionSQL agregar = new ConexionSQL();
+                            agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+                            MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Login login = new Login();
+                            this.Hide();
+                            login.ShowDialog();
+                            this.Close();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Ha ocurrido un problema al momento de crear su cuenta. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ha ocurrido un error al enviar el mail, por lo tanto no podemos crear la cuenta. Por favor, introduzca su correo nuevamente y vuelva a intentarlo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtEmail.Text = string.Empty;
+                    }
+                    break;     
             }
         }
 
@@ -105,8 +136,7 @@ namespace Trabajo_POO_Grupo_4
                 btnOjito.BackgroundImage = Properties.Resources.ojito;
                 bandera = 0;
                 txtContra.PasswordChar = '\0';
-            }
-            
+            }   
         }
     }
 }
