@@ -30,23 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGestionarUsuarios = new System.Windows.Forms.DataGridView();
-            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Administrador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listadeCuentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoDataSet = new Trabajo_POO_Grupo_4.ProyectoDataSet();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.registrobox = new System.Windows.Forms.GroupBox();
-            this.txtAdmin = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
-            this.checkBoxAdmin = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +48,13 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.listadeCuentasTableAdapter = new Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrasenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -70,13 +66,11 @@
             this.dgvGestionarUsuarios.AutoGenerateColumns = false;
             this.dgvGestionarUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGestionarUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.N,
             this.nombreDataGridViewTextBoxColumn,
             this.apellidoDataGridViewTextBoxColumn,
             this.usuarioDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
-            this.contrasenaDataGridViewTextBoxColumn,
-            this.Administrador});
+            this.contrasenaDataGridViewTextBoxColumn});
             this.dgvGestionarUsuarios.DataSource = this.listadeCuentasBindingSource;
             this.dgvGestionarUsuarios.Location = new System.Drawing.Point(13, 13);
             this.dgvGestionarUsuarios.Name = "dgvGestionarUsuarios";
@@ -84,62 +78,7 @@
             this.dgvGestionarUsuarios.RowTemplate.Height = 24;
             this.dgvGestionarUsuarios.Size = new System.Drawing.Size(835, 505);
             this.dgvGestionarUsuarios.TabIndex = 0;
-            // 
-            // N
-            // 
-            this.N.DataPropertyName = "Nombre";
-            this.N.HeaderText = "N";
-            this.N.MinimumWidth = 6;
-            this.N.Name = "N";
-            this.N.Width = 125;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidoDataGridViewTextBoxColumn
-            // 
-            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // contrasenaDataGridViewTextBoxColumn
-            // 
-            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
-            this.contrasenaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
-            this.contrasenaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // Administrador
-            // 
-            this.Administrador.DataPropertyName = "Nombre";
-            this.Administrador.HeaderText = "Administrador";
-            this.Administrador.MinimumWidth = 6;
-            this.Administrador.Name = "Administrador";
-            this.Administrador.Width = 125;
+            this.dgvGestionarUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGestionarUsuarios_CellClick);
             // 
             // listadeCuentasBindingSource
             // 
@@ -176,11 +115,9 @@
             // registrobox
             // 
             this.registrobox.BackColor = System.Drawing.Color.LightGray;
-            this.registrobox.Controls.Add(this.txtAdmin);
-            this.registrobox.Controls.Add(this.txtID);
             this.registrobox.Controls.Add(this.label7);
+            this.registrobox.Controls.Add(this.txtID);
             this.registrobox.Controls.Add(this.btnModificarUsuario);
-            this.registrobox.Controls.Add(this.checkBoxAdmin);
             this.registrobox.Controls.Add(this.btnEliminarUsuario);
             this.registrobox.Controls.Add(this.label1);
             this.registrobox.Controls.Add(this.btnAgregarUsuario);
@@ -204,34 +141,6 @@
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Datos del Usuario:";
             // 
-            // txtAdmin
-            // 
-            this.txtAdmin.Location = new System.Drawing.Point(339, 269);
-            this.txtAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAdmin.Name = "txtAdmin";
-            this.txtAdmin.Size = new System.Drawing.Size(34, 32);
-            this.txtAdmin.TabIndex = 18;
-            this.txtAdmin.Visible = false;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(215, 216);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(319, 32);
-            this.txtID.TabIndex = 17;
-            this.txtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress_1);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(7, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 18);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Número de Usuario:";
-            // 
             // btnModificarUsuario
             // 
             this.btnModificarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
@@ -242,16 +151,6 @@
             this.btnModificarUsuario.Text = "Modificar Usuario";
             this.btnModificarUsuario.UseVisualStyleBackColor = true;
             this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click_1);
-            // 
-            // checkBoxAdmin
-            // 
-            this.checkBoxAdmin.AutoSize = true;
-            this.checkBoxAdmin.Location = new System.Drawing.Point(233, 277);
-            this.checkBoxAdmin.Name = "checkBoxAdmin";
-            this.checkBoxAdmin.Size = new System.Drawing.Size(79, 24);
-            this.checkBoxAdmin.TabIndex = 14;
-            this.checkBoxAdmin.Text = "Admin";
-            this.checkBoxAdmin.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -355,6 +254,65 @@
             // 
             this.listadeCuentasTableAdapter.ClearBeforeFill = true;
             // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // apellidoDataGridViewTextBoxColumn
+            // 
+            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
+            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
+            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
+            this.apellidoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // usuarioDataGridViewTextBoxColumn
+            // 
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            this.usuarioDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // contrasenaDataGridViewTextBoxColumn
+            // 
+            this.contrasenaDataGridViewTextBoxColumn.DataPropertyName = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.HeaderText = "Contrasena";
+            this.contrasenaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.contrasenaDataGridViewTextBoxColumn.Name = "contrasenaDataGridViewTextBoxColumn";
+            this.contrasenaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(145, 213);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(389, 32);
+            this.txtID.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(7, 217);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 18);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Index:";
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -385,7 +343,6 @@
         private System.Windows.Forms.Button btnAgregarUsuario;
         private System.Windows.Forms.Button btnEliminarUsuario;
         private System.Windows.Forms.GroupBox registrobox;
-        private System.Windows.Forms.CheckBox checkBoxAdmin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -401,15 +358,12 @@
         private ProyectoDataSet proyectoDataSet;
         private System.Windows.Forms.BindingSource listadeCuentasBindingSource;
         private ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter listadeCuentasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contrasenaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Administrador;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtAdmin;
+        private System.Windows.Forms.TextBox txtID;
     }
 }

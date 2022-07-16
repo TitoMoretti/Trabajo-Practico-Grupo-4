@@ -14,6 +14,7 @@ namespace Trabajo_POO_Grupo_4
 {
     public partial class Admin : Form
     {
+        private int rowIndex = 0;
         public Admin()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
             ConexionSQL agregar = new ConexionSQL();
-            agregar.Agregar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
+            agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             dgvGestionarUsuarios.DataSource = agregar.actualizarlista();
         }
 
@@ -43,15 +44,14 @@ namespace Trabajo_POO_Grupo_4
         private void btnModificarUsuario_Click_1(object sender, EventArgs e)
         {
             ConexionSQL modificar = new ConexionSQL();
-            modificar.Modificar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text, txtAdmin.Text);
+            modificar.Modificar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             dgvGestionarUsuarios.DataSource = modificar.actualizarlista();
         }
-        private void txtID_KeyPress_1(object sender, KeyPressEventArgs e)
+
+        private void dgvGestionarUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
-            {
-                e.Handled = true;
-            }
+            rowIndex = e.RowIndex;
+            txtID.Text = (rowIndex + 1).ToString();
         }
     }
 }
