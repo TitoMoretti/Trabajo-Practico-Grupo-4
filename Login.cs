@@ -19,6 +19,7 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
+        int bandera = 0;
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -74,6 +75,23 @@ namespace Trabajo_POO_Grupo_4
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnOjito_Click(object sender, EventArgs e)
+        {
+            if (bandera == 1)
+            {
+                btnOjito.BackgroundImage = Properties.Resources.Ojito_cerrado;
+                txt_password.PasswordChar = '*';
+                bandera = 0;
+            }
+            else
+            {
+                btnOjito.BackgroundImage = Properties.Resources.ojito;
+                bandera = 1;
+                txt_password.PasswordChar = '\0';
+            }
+
         }
     }
 }

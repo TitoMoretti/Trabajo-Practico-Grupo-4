@@ -326,3 +326,5 @@ C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CoreCompileInput
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Vista.csproj.CopyComplete
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\galot\Documents\UAI\2do año\Programacion Orientada a Objetos\NagaPark\obj\Debug\Trabajo_POO_Grupo_4.Facturacion.resources

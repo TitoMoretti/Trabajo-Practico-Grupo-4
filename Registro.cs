@@ -18,6 +18,8 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
+        int bandera = 0;
+        
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -40,7 +42,6 @@ namespace Trabajo_POO_Grupo_4
             txtUsuario.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtContra.Text = string.Empty;
-            btnOjitoCerrado.Enabled=false;
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -93,15 +94,19 @@ namespace Trabajo_POO_Grupo_4
 
         public void btnOjito_Click(object sender, EventArgs e)
         {
-            string c = txtContra.Text;
-            txtContra.Text = "***************";
-            btnOjito.Enabled= false;
-            btnOjitoCerrado.Enabled = true;
-        }
-        public void btnOjitoCerrado_Click(object sender, EventArgs e)
-        {
-            //hacer código para mostrar texbox la contraseña
-            btnOjito.Enabled = true;
+            if (bandera == 0)
+            {
+                btnOjito.BackgroundImage = Properties.Resources.Ojito_cerrado;
+                txtContra.PasswordChar = '*';
+                bandera = 1;
+            }
+            else
+            {
+                btnOjito.BackgroundImage = Properties.Resources.ojito;
+                bandera = 0;
+                txtContra.PasswordChar = '\0';
+            }
+            
         }
     }
 }
