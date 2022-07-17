@@ -208,7 +208,6 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.exe
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\obj\Debug\Trabajo POO Grupo 4.pdb
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\bin\Debug\FontAwesome.Sharp.dll
-<<<<<<< HEAD
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe.config
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.pdb
@@ -357,7 +356,6 @@ C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
 >>>>>>> c5c317e25980832f02c00b92f82fa917928152f3
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo_POO_Grupo_4.facturacion.resources
-=======
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe.config
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.exe
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\bin\Debug\Trabajo POO Grupo 4.pdb
@@ -387,3 +385,7 @@ C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\obj\De
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.exe
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\obj\Debug\Trabajo POO Grupo 4.pdb
 >>>>>>> 8224802d23fbef51e6e0b826f3a686230fd7efd3
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\BouncyCastle.Crypto.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\itextsharp.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\itextsharp.xmlworker.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\bin\Debug\itextsharp.xml

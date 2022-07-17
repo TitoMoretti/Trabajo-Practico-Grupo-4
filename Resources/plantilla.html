@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Page Design</title>
+	<style>
+		table.border {
+			border-collapse: collapse;
+		}
+
+			table.border th {
+				padding: 5px;
+				border: 1px solid black;
+			}
+
+			table.border td {
+				padding: 5px;
+				border: 1px solid black;
+			}
+	</style>
+</head>
+<body>
+	<table style="width:100%">
+
+		<tr>
+			<td style="width:20%"></td>
+			<td style="width:60%" align="center">
+				<table>
+					<tr><td align="center">NAGAPARK </td></tr>
+					<tr><td align="center">CENTRO DE DIVERSION   </td></tr>
+					<tr><td align="center">GRUPO 4     </td></tr>
+				</table>
+			</td>
+			<td style="width:20%">
+				<table class="border" style="width:100%">
+					<tr><td align="center">Ruc: 123123  </td></tr>
+					<tr><td align="center">BOLETA </td></tr>
+					<tr><td align="center">NRO:000001 </td></tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr><td colspan="3" height="20"></td></tr>
+
+		<tr>
+			<td colspan="2">
+				<table style="width:100%">
+					<tr>
+						<td colspan="1" style="width:20%">Vendedor:</td>
+						<td colspan="3" style="width:80%; border-bottom:1px solid black">@VENDEDOR</td>
+					</tr>
+					<tr>
+						<td colspan="1" style="width:10%">Fecha de emision</td>
+						<td colspan="1" style="width:40%; border-bottom:1px solid black">@FECHA</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr><td colspan="3" height="20"></td></tr>
+
+		<tr>
+			<td colspan="3">
+				<table class="border" style="width:100%">
+
+					<thead style="background-color:#D8D8D8">
+						<tr>
+							<th>Usuario</th>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>Tipo</th>
+							<th>Candidad</th>
+							<th>Importe</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<!----<tr>
+							<td>Yue</td>
+							<td>Yue</td>
+							<td>Huang</td>
+							<td>vip</td>
+							<td>2</td>
+							<td>8000</td>
+						</tr>-->
+						@FILAS
+						<tr>
+							<td style="border: 0px !important"></td>
+							<td style="border: 0px !important"></td>
+							<td style="border: 0px !important"></td>
+							<td style="border: 0px !important"></td>
+							<td align="right">Total:</td>
+							<td>@TOTAL</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+
+	</table>
+</body>
+</html>

@@ -12,7 +12,7 @@ namespace Controladora
 {
     public class ConexionSQL
     {
-        private string CadenaConexion = "Data Source=DESKTOP-2F4NVAS\\SQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
+        private string CadenaConexion = "Data Source=LAPTOP-SANTI,491772;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
 
         public void Agregar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
