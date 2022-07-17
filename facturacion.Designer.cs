@@ -51,7 +51,6 @@ namespace Trabajo_POO_Grupo_4
             this.label1 = new System.Windows.Forms.Label();
             this.dgvGestionarFacturas = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnGenerar = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -63,10 +62,10 @@ namespace Trabajo_POO_Grupo_4
             // btnCalcularPrecio
             // 
             this.btnCalcularPrecio.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnCalcularPrecio.Location = new System.Drawing.Point(21, 212);
+            this.btnCalcularPrecio.Location = new System.Drawing.Point(21, 226);
             this.btnCalcularPrecio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcularPrecio.Name = "btnCalcularPrecio";
-            this.btnCalcularPrecio.Size = new System.Drawing.Size(535, 35);
+            this.btnCalcularPrecio.Size = new System.Drawing.Size(535, 37);
             this.btnCalcularPrecio.TabIndex = 0;
             this.btnCalcularPrecio.Text = "Calcular Precio";
             this.btnCalcularPrecio.UseVisualStyleBackColor = false;
@@ -103,68 +102,68 @@ namespace Trabajo_POO_Grupo_4
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvGestionarFacturas);
             this.panel1.Controls.Add(this.btnCalcularPrecio);
-            this.panel1.Location = new System.Drawing.Point(345, 62);
+            this.panel1.Location = new System.Drawing.Point(345, 66);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 437);
+            this.panel1.Size = new System.Drawing.Size(572, 466);
             this.panel1.TabIndex = 3;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(21, 254);
+            this.txtPrecio.Location = new System.Drawing.Point(21, 271);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(535, 25);
+            this.txtPrecio.Size = new System.Drawing.Size(535, 22);
             this.txtPrecio.TabIndex = 17;
             // 
             // txtCantidadTickets
             // 
-            this.txtCantidadTickets.Location = new System.Drawing.Point(257, 136);
+            this.txtCantidadTickets.Location = new System.Drawing.Point(257, 145);
             this.txtCantidadTickets.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCantidadTickets.Name = "txtCantidadTickets";
-            this.txtCantidadTickets.Size = new System.Drawing.Size(297, 25);
+            this.txtCantidadTickets.Size = new System.Drawing.Size(297, 22);
             this.txtCantidadTickets.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 138);
+            this.label7.Location = new System.Drawing.Point(17, 147);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 15);
+            this.label7.Size = new System.Drawing.Size(129, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Candidad de tickets:";
             // 
             // FechadeIngreso
             // 
-            this.FechadeIngreso.Location = new System.Drawing.Point(257, 170);
+            this.FechadeIngreso.Location = new System.Drawing.Point(257, 181);
             this.FechadeIngreso.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.FechadeIngreso.Name = "FechadeIngreso";
-            this.FechadeIngreso.Size = new System.Drawing.Size(297, 25);
+            this.FechadeIngreso.Size = new System.Drawing.Size(297, 22);
             this.FechadeIngreso.TabIndex = 14;
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(257, 12);
+            this.txtUser.Location = new System.Drawing.Point(257, 13);
             this.txtUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(298, 25);
+            this.txtUser.Size = new System.Drawing.Size(298, 22);
             this.txtUser.TabIndex = 12;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(256, 73);
+            this.txtApellido.Location = new System.Drawing.Point(256, 78);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(298, 25);
+            this.txtApellido.Size = new System.Drawing.Size(298, 22);
             this.txtApellido.TabIndex = 11;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(257, 43);
+            this.txtNombre.Location = new System.Drawing.Point(257, 46);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(297, 25);
+            this.txtNombre.Size = new System.Drawing.Size(297, 22);
             this.txtNombre.TabIndex = 10;
             // 
             // comboBoxTipo
@@ -174,110 +173,100 @@ namespace Trabajo_POO_Grupo_4
             "Seleccione uno...",
             "Entrada General - $ 2700",
             "Entrada VIP - $4000"});
-            this.comboBoxTipo.Location = new System.Drawing.Point(257, 105);
+            this.comboBoxTipo.Location = new System.Drawing.Point(257, 112);
             this.comboBoxTipo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.Size = new System.Drawing.Size(297, 23);
+            this.comboBoxTipo.Size = new System.Drawing.Size(297, 24);
             this.comboBoxTipo.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 110);
+            this.label5.Location = new System.Drawing.Point(17, 117);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 15);
+            this.label5.Size = new System.Drawing.Size(98, 16);
             this.label5.TabIndex = 7;
             this.label5.Text = "Tipo de tickets:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 174);
+            this.label4.Location = new System.Drawing.Point(19, 186);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 15);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Fecha de Ingreso :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 16);
+            this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 15);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Usuario :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 77);
+            this.label2.Location = new System.Drawing.Point(17, 82);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 15);
+            this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Apellido :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 47);
+            this.label1.Location = new System.Drawing.Point(17, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre :";
             // 
             // dgvGestionarFacturas
             // 
             this.dgvGestionarFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGestionarFacturas.Location = new System.Drawing.Point(20, 287);
+            this.dgvGestionarFacturas.Location = new System.Drawing.Point(20, 306);
             this.dgvGestionarFacturas.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvGestionarFacturas.Name = "dgvGestionarFacturas";
             this.dgvGestionarFacturas.RowHeadersWidth = 51;
-            this.dgvGestionarFacturas.Size = new System.Drawing.Size(535, 147);
+            this.dgvGestionarFacturas.Size = new System.Drawing.Size(535, 157);
             this.dgvGestionarFacturas.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(589, 24);
+            this.label6.Location = new System.Drawing.Point(589, 26);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(191, 15);
+            this.label6.Size = new System.Drawing.Size(202, 16);
             this.label6.TabIndex = 8;
             this.label6.Text = "FACTURACION DE NAGAPARK";
             // 
-            // btnGenerar
-            // 
-            this.btnGenerar.Location = new System.Drawing.Point(925, 200);
-            this.btnGenerar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(121, 141);
-            this.btnGenerar.TabIndex = 4;
-            this.btnGenerar.Text = "Generar Factura";
-            this.btnGenerar.UseVisualStyleBackColor = true;
-            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
-            // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(925, 349);
+            this.btnBack.Location = new System.Drawing.Point(925, 372);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(121, 151);
+            this.btnBack.Size = new System.Drawing.Size(121, 161);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(925, 62);
+            this.btnAgregar.Location = new System.Drawing.Point(925, 66);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(121, 133);
+            this.btnAgregar.Size = new System.Drawing.Size(121, 142);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar Ventas";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -285,19 +274,20 @@ namespace Trabajo_POO_Grupo_4
             // 
             // Facturacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1395, 533);
+            this.ClientSize = new System.Drawing.Size(1395, 569);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
             this.Name = "Facturacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "facturacion";
             this.Load += new System.EventHandler(this.facturacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();
@@ -328,7 +318,6 @@ namespace Trabajo_POO_Grupo_4
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnGenerar;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DateTimePicker FechadeIngreso;
         private System.Windows.Forms.Label label7;

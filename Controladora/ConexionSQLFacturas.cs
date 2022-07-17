@@ -13,12 +13,13 @@ namespace Controladora
     {
         private string CadenaConexion = "Data Source=LAPTOP-SANTI;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
 
+
         public void AgregarFactura(string Nombre, string Apellido, string Usuario, string TipoTicket, string Cantidad, DateTime Fecha)
         {
             string Date=Convert.ToString(Fecha);
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Insert into ListadeFacturas(Nombre,Apellido,Usuario,Tipo,Cantidad,Fecha) values ('" + Nombre + "','" + Apellido + "','" + Usuario + "','" + TipoTicket + "','" + Cantidad + "','" + Date + "')", conn);
+                SqlCommand cmd = new SqlCommand("Insert into ListadeFacturas(Usuario,Nombre,Apellido,Tipo,Cantidad,Fecha) values ('" + Usuario + "','" + Nombre + "','" + Apellido + "','" + TipoTicket + "','" + Cantidad + "','" + Date + "')", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();

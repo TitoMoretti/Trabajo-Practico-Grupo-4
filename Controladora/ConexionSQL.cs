@@ -12,13 +12,13 @@ namespace Controladora
 {
     public class ConexionSQL
     {
-        private string CadenaConexion = "Data Source=LAPTOP-SANTI,491772;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
+        private string CadenaConexion = "Data Source=LAPTOP-SANTI;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
 
-        public void Agregar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
+        public void Agregar(string ID, string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Insert into ListadeCuentas(Nombre,Apellido,Usuario,Email,Contrasena) values ('" + Nombre + "','" + Apellido + "','" + Usuario + "','" + Email + "','" + Contrasena + "')", conn);
+                SqlCommand cmd = new SqlCommand("Insert into ListadeCuentas(ID,Nombre,Apellido,Usuario,Email,Contrasena) values ('" + ID + "','" + Nombre + "','" + Apellido + "','" + Usuario + "','" + Email + "','" + Contrasena + "')", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -26,12 +26,11 @@ namespace Controladora
             }   
         }
 
-        public void Modificar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
+        public void Modificar(string ID, string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where Nombre='" + Nombre + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
-                //SqlCommand cmd = new SqlCommand("Update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where Usuario='" + Usuario + "'", conn);
+                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set ID= '" + ID + "',Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where ID='" + ID + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -39,12 +38,11 @@ namespace Controladora
             }
         }
 
-        public void Eliminar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
+        public void Eliminar(string ID, string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where Nombre='" + Nombre + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
-                //SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where N='" + N + "'", conn);
+                SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where ID='" + ID + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -117,5 +115,23 @@ namespace Controladora
             }
             return valido;
         }
+        public bool Logear(string Usuario, string Contrasena)
+        {
+            SqlConnection conn = new SqlConnection(CadenaConexion);
+            SqlCommand cmd = new SqlCommand("Select * from ListadeCuentas where Usuario=@u and Contrasena=@p", conn);
+            cmd.Parameters.AddWithValue("@u", Usuario);
+            cmd.Parameters.AddWithValue("@p", Contrasena);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
     }
 }

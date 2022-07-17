@@ -20,7 +20,7 @@ namespace Trabajo_POO_Grupo_4
             InitializeComponent();
         }
         int bandera = 0;
-        
+        int identificacion = 0;
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace Trabajo_POO_Grupo_4
                     msg.To.Add(txtEmail.Text);
                     msg.Subject = "NagaPark: Se ha creado una cuenta con este correo electrónico";
                     msg.SubjectEncoding = Encoding.UTF8;
-                    msg.Body = "Hola!!! Queremos informarle que se ha creado una cuenta de empleado para el parque NagaPark con los siguientes datos: <br><br>Nombre: " +txtNombre.Text+ "<br>Apellido: " +txtApellido.Text+ "<br>Nombre de Usuario: " +txtUsuario.Text+ "<br>Email: " + txtEmail.Text+ "<br>Contraseña:" + txtContra.Text+ "<br><br>Ante cualquier duda sobre la cuenta, no dude en visitar nuestra oficina de atención para recibir más información. <br><br>Esperamos que tenga un buen día y saludos desde NagaPark!<br><br>Nagatoro Ichirō";
+                    msg.Body = "Hola!!! Queremos informarle que se ha creado una cuenta de empleado para el parque NagaPark con los siguientes datos: <br><br>Nombre: " +txtNombre.Text+ "<br>Apellido: " +txtApellido.Text+ "<br>Nombre de Usuario: " +txtUsuario.Text+ "<br>Email: " + txtEmail.Text+ "<br><br>Ante cualquier duda sobre la cuenta, no dude en visitar nuestra oficina de atención para recibir más información. <br><br>Esperamos que tenga un buen día y saludos desde NagaPark!<br><br>Nagatoro Ichirō";
                     msg.BodyEncoding = Encoding.UTF8;
                     msg.IsBodyHtml = true;
 
@@ -101,8 +101,10 @@ namespace Trabajo_POO_Grupo_4
                         cliente.Send(msg);
                         try
                         {
+                            identificacion = identificacion + 1;
+                            string id = Convert.ToString(identificacion);
                             ConexionSQL agregar = new ConexionSQL();
-                            agregar.Agregar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+                            agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
                             MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Login login = new Login();
                             this.Hide();

@@ -58,7 +58,19 @@ namespace Trabajo_POO_Grupo_4
                             }
                             else
                             {
-                                //código para buscar en el SQL los datos y de encontrarlos, que vaya a la ventana de admin o facturas.
+                                ConexionSQL logear = new ConexionSQL();
+                                bool validologin = logear.Logear(txt_user.Text, txt_password.Text);
+                                if(validologin)
+                                {
+                                    Admin root = new Admin();
+                                    this.Hide();
+                                    root.ShowDialog();
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Nombre de usuario y contraseña incorrectos. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                             }
                         }
                         catch (Exception)

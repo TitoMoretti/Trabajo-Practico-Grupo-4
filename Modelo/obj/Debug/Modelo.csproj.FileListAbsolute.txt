@@ -120,9 +120,7 @@ C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.cspro
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
-<<<<<<< HEAD
 >>>>>>> c5c317e25980832f02c00b92f82fa917928152f3
-=======
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll.config
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.dll
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\Modelo.pdb
@@ -136,3 +134,7 @@ C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.dll
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Modelo\obj\Debug\Modelo.pdb
 >>>>>>> 8224802d23fbef51e6e0b826f3a686230fd7efd3
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\itextsharp.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Modelo\bin\Debug\itextsharp.xml

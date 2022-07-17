@@ -182,3 +182,7 @@ C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Contro
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
 >>>>>>> 8224802d23fbef51e6e0b826f3a686230fd7efd3
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xml

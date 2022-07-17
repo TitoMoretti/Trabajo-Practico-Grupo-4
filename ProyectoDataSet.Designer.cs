@@ -279,6 +279,8 @@ namespace Trabajo_POO_Grupo_4 {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ListadeCuentasDataTable : global::System.Data.TypedTableBase<ListadeCuentasRow> {
             
+            private global::System.Data.DataColumn columnID;
+            
             private global::System.Data.DataColumn columnNombre;
             
             private global::System.Data.DataColumn columnApellido;
@@ -320,6 +322,14 @@ namespace Trabajo_POO_Grupo_4 {
             protected ListadeCuentasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -399,9 +409,10 @@ namespace Trabajo_POO_Grupo_4 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ListadeCuentasRow AddListadeCuentasRow(string Nombre, string Apellido, string Usuario, string Email, string Contrasena) {
+            public ListadeCuentasRow AddListadeCuentasRow(string ID, string Nombre, string Apellido, string Usuario, string Email, string Contrasena) {
                 ListadeCuentasRow rowListadeCuentasRow = ((ListadeCuentasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        ID,
                         Nombre,
                         Apellido,
                         Usuario,
@@ -429,6 +440,7 @@ namespace Trabajo_POO_Grupo_4 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
+                this.columnID = base.Columns["ID"];
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnApellido = base.Columns["Apellido"];
                 this.columnUsuario = base.Columns["Usuario"];
@@ -439,6 +451,8 @@ namespace Trabajo_POO_Grupo_4 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombre);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
@@ -449,6 +463,8 @@ namespace Trabajo_POO_Grupo_4 {
                 base.Columns.Add(this.columnEmail);
                 this.columnContrasena = new global::System.Data.DataColumn("Contrasena", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnContrasena);
+                this.columnID.AllowDBNull = false;
+                this.columnID.MaxLength = 50;
                 this.columnNombre.AllowDBNull = false;
                 this.columnNombre.MaxLength = 50;
                 this.columnApellido.AllowDBNull = false;
@@ -597,6 +613,17 @@ namespace Trabajo_POO_Grupo_4 {
             internal ListadeCuentasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableListadeCuentas = ((ListadeCuentasDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ID {
+                get {
+                    return ((string)(this[this.tableListadeCuentas.IDColumn]));
+                }
+                set {
+                    this[this.tableListadeCuentas.IDColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -822,14 +849,15 @@ namespace Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ListadeCuentas] ([Nombre], [Apellido], [Usuario], [Email], [Co" +
-                "ntrasena]) VALUES (@Nombre, @Apellido, @Usuario, @Email, @Contrasena)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [ListadeCuentas] ([Nombre], [Apellido], [Usuario], [Email], [Contrase" +
+                "na], [ID]) VALUES (@Nombre, @Apellido, @Usuario, @Email, @Contrasena, @ID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nombre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Apellido", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Apellido", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Usuario", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Usuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contrasena", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contrasena", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -845,7 +873,7 @@ namespace Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Nombre, Apellido, Usuario, Email, Contrasena FROM dbo.ListadeCuentas";
+            this._commandCollection[0].CommandText = "SELECT Nombre, Apellido, Usuario, Email, Contrasena FROM ListadeCuentas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -906,7 +934,7 @@ namespace Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Nombre, string Apellido, string Usuario, string Email, string Contrasena) {
+        public virtual int Insert(string Nombre, string Apellido, string Usuario, string Email, string Contrasena, string ID) {
             if ((Nombre == null)) {
                 throw new global::System.ArgumentNullException("Nombre");
             }
@@ -936,6 +964,12 @@ namespace Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Contrasena));
+            }
+            if ((ID == null)) {
+                throw new global::System.ArgumentNullException("ID");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(ID));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

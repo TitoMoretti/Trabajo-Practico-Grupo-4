@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGestionarUsuarios = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,20 +68,30 @@
             this.dgvGestionarUsuarios.AutoGenerateColumns = false;
             this.dgvGestionarUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGestionarUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
             this.nombreDataGridViewTextBoxColumn,
             this.apellidoDataGridViewTextBoxColumn,
             this.usuarioDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
             this.contrasenaDataGridViewTextBoxColumn});
             this.dgvGestionarUsuarios.DataSource = this.listadeCuentasBindingSource;
-            this.dgvGestionarUsuarios.Location = new System.Drawing.Point(10, 11);
-            this.dgvGestionarUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGestionarUsuarios.Location = new System.Drawing.Point(13, 14);
+            this.dgvGestionarUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvGestionarUsuarios.Name = "dgvGestionarUsuarios";
             this.dgvGestionarUsuarios.RowHeadersWidth = 51;
             this.dgvGestionarUsuarios.RowTemplate.Height = 24;
-            this.dgvGestionarUsuarios.Size = new System.Drawing.Size(626, 410);
+            this.dgvGestionarUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvGestionarUsuarios.Size = new System.Drawing.Size(835, 505);
             this.dgvGestionarUsuarios.TabIndex = 0;
             this.dgvGestionarUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGestionarUsuarios_CellClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.Width = 125;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -135,10 +146,10 @@
             // btnAgregarUsuario
             // 
             this.btnAgregarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(10, 260);
-            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(13, 320);
+            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(95, 50);
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(127, 62);
             this.btnAgregarUsuario.TabIndex = 1;
             this.btnAgregarUsuario.Text = "Agregar Usuario";
             this.btnAgregarUsuario.UseVisualStyleBackColor = true;
@@ -147,10 +158,10 @@
             // btnEliminarUsuario
             // 
             this.btnEliminarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(305, 260);
-            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(407, 320);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(95, 50);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(127, 62);
             this.btnEliminarUsuario.TabIndex = 2;
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
@@ -176,9 +187,11 @@
             this.registrobox.Controls.Add(this.txtNombre);
             this.registrobox.Controls.Add(this.txtApellido);
             this.registrobox.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.registrobox.Location = new System.Drawing.Point(641, 93);
+            this.registrobox.Location = new System.Drawing.Point(855, 114);
+            this.registrobox.Margin = new System.Windows.Forms.Padding(4);
             this.registrobox.Name = "registrobox";
-            this.registrobox.Size = new System.Drawing.Size(407, 327);
+            this.registrobox.Padding = new System.Windows.Forms.Padding(4);
+            this.registrobox.Size = new System.Drawing.Size(543, 402);
             this.registrobox.TabIndex = 17;
             this.registrobox.TabStop = false;
             this.registrobox.Text = "Datos del Usuario:";
@@ -187,29 +200,27 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(5, 176);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(7, 217);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 15);
+            this.label7.Size = new System.Drawing.Size(64, 18);
             this.label7.TabIndex = 17;
             this.label7.Text = "Index:";
             // 
             // txtID
             // 
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(109, 173);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Location = new System.Drawing.Point(145, 213);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(293, 27);
+            this.txtID.Size = new System.Drawing.Size(389, 32);
             this.txtID.TabIndex = 16;
             // 
             // btnModificarUsuario
             // 
             this.btnModificarUsuario.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.btnModificarUsuario.Location = new System.Drawing.Point(153, 260);
-            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(204, 320);
+            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(95, 50);
+            this.btnModificarUsuario.Size = new System.Drawing.Size(127, 62);
             this.btnModificarUsuario.TabIndex = 15;
             this.btnModificarUsuario.Text = "Modificar Usuario";
             this.btnModificarUsuario.UseVisualStyleBackColor = true;
@@ -218,20 +229,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 185);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(11, 228);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(5, 25);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(7, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
+            this.label2.Size = new System.Drawing.Size(84, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
@@ -239,10 +248,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(5, 56);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(7, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.Size = new System.Drawing.Size(91, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Apellido:";
             // 
@@ -250,10 +258,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(5, 87);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(7, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 15);
+            this.label4.Size = new System.Drawing.Size(191, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombre de Usuario:";
             // 
@@ -261,62 +268,60 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(5, 118);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(7, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 15);
+            this.label5.Size = new System.Drawing.Size(62, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Email:";
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(109, 144);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContra.Location = new System.Drawing.Point(145, 177);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(293, 27);
+            this.txtContra.Size = new System.Drawing.Size(389, 32);
             this.txtContra.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(5, 149);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(7, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 15);
+            this.label6.Size = new System.Drawing.Size(124, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Contraseña:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(59, 113);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(79, 139);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(343, 27);
+            this.txtEmail.Size = new System.Drawing.Size(456, 32);
             this.txtEmail.TabIndex = 10;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(162, 82);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(216, 101);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(240, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(319, 32);
             this.txtUsuario.TabIndex = 9;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(77, 20);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Location = new System.Drawing.Point(103, 25);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(325, 27);
+            this.txtNombre.Size = new System.Drawing.Size(432, 32);
             this.txtNombre.TabIndex = 7;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(82, 51);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Location = new System.Drawing.Point(109, 63);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(320, 27);
+            this.txtApellido.Size = new System.Drawing.Size(425, 32);
             this.txtApellido.TabIndex = 8;
             // 
             // listadeCuentasTableAdapter
@@ -326,9 +331,10 @@
             // Facturación
             // 
             this.Facturación.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.Facturación.Location = new System.Drawing.Point(641, 11);
+            this.Facturación.Location = new System.Drawing.Point(855, 14);
+            this.Facturación.Margin = new System.Windows.Forms.Padding(4);
             this.Facturación.Name = "Facturación";
-            this.Facturación.Size = new System.Drawing.Size(133, 76);
+            this.Facturación.Size = new System.Drawing.Size(177, 94);
             this.Facturación.TabIndex = 18;
             this.Facturación.Text = "Facturación";
             this.Facturación.UseVisualStyleBackColor = true;
@@ -336,16 +342,16 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1054, 431);
+            this.ClientSize = new System.Drawing.Size(1405, 530);
             this.Controls.Add(this.Facturación);
             this.Controls.Add(this.registrobox);
             this.Controls.Add(this.dgvGestionarUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -381,13 +387,14 @@
         private ProyectoDataSet proyectoDataSet;
         private System.Windows.Forms.BindingSource listadeCuentasBindingSource;
         private ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter listadeCuentasTableAdapter;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Button Facturación;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contrasenaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Button Facturación;
     }
 }
