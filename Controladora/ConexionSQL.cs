@@ -29,7 +29,8 @@ namespace Controladora
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where Usuario='" + Usuario + "'", conn);
+                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where Nombre='" + Nombre + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
+                //SqlCommand cmd = new SqlCommand("Update ListadeCuentas set Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where Usuario='" + Usuario + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -37,11 +38,12 @@ namespace Controladora
             }
         }
 
-        public void Eliminar(string N)
+        public void Eliminar(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where N='" + N + "'", conn);
+                SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where Nombre='" + Nombre + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
+                //SqlCommand cmd = new SqlCommand("Delete from ListadeCuentas where N='" + N + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();

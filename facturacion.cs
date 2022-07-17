@@ -20,8 +20,7 @@ namespace Trabajo_POO_Grupo_4
 
         private void facturacion_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoDataSet.ListadeCuentas' Puede moverla o quitarla según sea necesario.
-            this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
+            
             comboBoxTipo.SelectedIndex = 0;
 
         }
@@ -99,7 +98,9 @@ namespace Trabajo_POO_Grupo_4
                 case 5:
                     try
                     {
-                        //código para mandar los datos de la factura al SQL
+                        ConexionSQLFacturas agregar = new ConexionSQLFacturas();
+                        agregar.AgregarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
+                        dgvGestionarFacturas.DataSource = agregar.actualizarlista();
                     }
                     catch (Exception)
                     {

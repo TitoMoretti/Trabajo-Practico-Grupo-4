@@ -36,7 +36,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
             ConexionSQL eliminar = new ConexionSQL();
-            eliminar.Eliminar(txtID.Text);
+            eliminar.Eliminar(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             dgvGestionarUsuarios.DataSource = eliminar.actualizarlista();
         }
 
@@ -51,6 +51,14 @@ namespace Trabajo_POO_Grupo_4
         {
             rowIndex = e.RowIndex;
             txtID.Text = (rowIndex + 1).ToString();
+        }
+
+        private void Facturación_Click(object sender, EventArgs e)
+        {
+            Facturacion facturas = new Facturacion();
+            this.Hide();
+            facturas.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionSQL.cs" />
+    <Compile Include="ConexionSQLFacturas.cs" />
     <Compile Include="ControladoraFacturas.cs" />
     <Compile Include="ControladoraUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
