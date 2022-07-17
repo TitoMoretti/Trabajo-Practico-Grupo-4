@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 
+
 namespace Trabajo_POO_Grupo_4
 {
     public partial class Admin : Form

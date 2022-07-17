@@ -88,6 +88,23 @@ C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo 
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.dll
 C:\Users\galot\OneDrive\Documentos\UAI\Programacion Orientada a Objetos\Trabajo Practico POO\Controladora\obj\Debug\Controladora.pdb
+<<<<<<< HEAD
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\GIT TRABAJO\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+=======
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
 C:\Users\Navegador\Desktop\Nueva carpeta\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
@@ -148,6 +165,7 @@ C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csp
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 C:\data\yue\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+>>>>>>> c5c317e25980832f02c00b92f82fa917928152f3
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
@@ -163,3 +181,4 @@ C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Contro
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+>>>>>>> 8224802d23fbef51e6e0b826f3a686230fd7efd3
