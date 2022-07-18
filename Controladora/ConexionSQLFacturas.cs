@@ -27,6 +27,19 @@ namespace Controladora
             }
         }
 
+        public void Eliminar(DateTime Fecha)
+        {
+            string Date = Convert.ToString(Fecha);
+            using (SqlConnection conn = new SqlConnection(CadenaConexion))
+            {
+                SqlCommand cmd = new SqlCommand("Delete from ListadeFacturas where Fecha='" + Date + "'", conn);
+                cmd.CommandType = CommandType.Text;
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                actualizarlista();
+            }
+        }
+
         public DataTable actualizarlista()
         {
             DataTable dt = new DataTable();

@@ -20,7 +20,7 @@ namespace Trabajo_POO_Grupo_4
             InitializeComponent();
         }
         int bandera = 0;
-        int identificacion = 0;
+        int identificador = 1;
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -101,8 +101,10 @@ namespace Trabajo_POO_Grupo_4
                         cliente.Send(msg);
                         try
                         {
-                            identificacion = identificacion + 1;
-                            string id = Convert.ToString(identificacion);
+                            identificador = 1;
+                            ConexionSQL Obteneridentificacion = new ConexionSQL();
+                            identificador = identificador + Obteneridentificacion.ObtenerID();
+                            string id = Convert.ToString(identificador);
                             ConexionSQL agregar = new ConexionSQL();
                             agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
                             MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);

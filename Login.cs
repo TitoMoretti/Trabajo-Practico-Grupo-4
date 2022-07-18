@@ -75,7 +75,7 @@ namespace Trabajo_POO_Grupo_4
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Ha ocurrido un problema al momento de iniciar sesión con su cuenta. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Ha ocurrido un problema.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }  
                     }
                 }

@@ -57,6 +57,7 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.listadeCuentasTableAdapter = new Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter();
             this.Facturación = new System.Windows.Forms.Button();
+            this.btnLimpiarDatos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -200,7 +201,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(7, 217);
+            this.label7.Location = new System.Drawing.Point(10, 220);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 18);
             this.label7.TabIndex = 17;
@@ -208,7 +209,8 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(145, 213);
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(145, 216);
             this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(389, 32);
@@ -340,6 +342,18 @@
             this.Facturación.UseVisualStyleBackColor = true;
             this.Facturación.Click += new System.EventHandler(this.Facturación_Click);
             // 
+            // btnLimpiarDatos
+            // 
+            this.btnLimpiarDatos.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiarDatos.Location = new System.Drawing.Point(1221, 14);
+            this.btnLimpiarDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiarDatos.Name = "btnLimpiarDatos";
+            this.btnLimpiarDatos.Size = new System.Drawing.Size(177, 94);
+            this.btnLimpiarDatos.TabIndex = 19;
+            this.btnLimpiarDatos.Text = "Limpiar Datos";
+            this.btnLimpiarDatos.UseVisualStyleBackColor = true;
+            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -347,6 +361,7 @@
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1405, 530);
+            this.Controls.Add(this.btnLimpiarDatos);
             this.Controls.Add(this.Facturación);
             this.Controls.Add(this.registrobox);
             this.Controls.Add(this.dgvGestionarUsuarios);
@@ -396,5 +411,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contrasenaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnLimpiarDatos;
     }
 }

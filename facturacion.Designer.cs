@@ -53,6 +53,8 @@ namespace Trabajo_POO_Grupo_4
             this.label6 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiarDatos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,10 +104,10 @@ namespace Trabajo_POO_Grupo_4
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvGestionarFacturas);
             this.panel1.Controls.Add(this.btnCalcularPrecio);
-            this.panel1.Location = new System.Drawing.Point(345, 66);
+            this.panel1.Location = new System.Drawing.Point(355, 64);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 466);
+            this.panel1.Size = new System.Drawing.Size(572, 477);
             this.panel1.TabIndex = 3;
             // 
             // txtPrecio
@@ -236,14 +238,16 @@ namespace Trabajo_POO_Grupo_4
             this.dgvGestionarFacturas.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvGestionarFacturas.Name = "dgvGestionarFacturas";
             this.dgvGestionarFacturas.RowHeadersWidth = 51;
+            this.dgvGestionarFacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGestionarFacturas.Size = new System.Drawing.Size(535, 157);
             this.dgvGestionarFacturas.TabIndex = 0;
+            this.dgvGestionarFacturas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGestionarFacturas_CellClick);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(589, 26);
+            this.label6.Location = new System.Drawing.Point(599, 23);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(202, 16);
@@ -252,10 +256,10 @@ namespace Trabajo_POO_Grupo_4
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(925, 372);
+            this.btnBack.Location = new System.Drawing.Point(935, 469);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(121, 161);
+            this.btnBack.Size = new System.Drawing.Size(121, 72);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -263,7 +267,7 @@ namespace Trabajo_POO_Grupo_4
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(925, 66);
+            this.btnAgregar.Location = new System.Drawing.Point(935, 64);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(121, 142);
@@ -272,13 +276,37 @@ namespace Trabajo_POO_Grupo_4
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(935, 215);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(121, 142);
+            this.btnEliminar.TabIndex = 11;
+            this.btnEliminar.Text = "Eliminar Ventas";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiarDatos
+            // 
+            this.btnLimpiarDatos.Location = new System.Drawing.Point(935, 379);
+            this.btnLimpiarDatos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnLimpiarDatos.Name = "btnLimpiarDatos";
+            this.btnLimpiarDatos.Size = new System.Drawing.Size(121, 72);
+            this.btnLimpiarDatos.TabIndex = 12;
+            this.btnLimpiarDatos.Text = "Limpiar Datos";
+            this.btnLimpiarDatos.UseVisualStyleBackColor = true;
+            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1395, 569);
+            this.ClientSize = new System.Drawing.Size(1409, 569);
+            this.Controls.Add(this.btnLimpiarDatos);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
@@ -288,7 +316,7 @@ namespace Trabajo_POO_Grupo_4
             this.MaximizeBox = false;
             this.Name = "Facturacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "facturacion";
+            this.Text = "Facturacion";
             this.Load += new System.EventHandler(this.facturacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).EndInit();
@@ -324,5 +352,7 @@ namespace Trabajo_POO_Grupo_4
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtCantidadTickets;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiarDatos;
     }
 }

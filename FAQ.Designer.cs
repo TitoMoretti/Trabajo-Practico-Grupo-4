@@ -50,7 +50,7 @@
             this.PreguntasBox.Location = new System.Drawing.Point(11, 60);
             this.PreguntasBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PreguntasBox.Name = "PreguntasBox";
-            this.PreguntasBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreguntasBox.Padding = new System.Windows.Forms.Padding(4);
             this.PreguntasBox.Size = new System.Drawing.Size(604, 258);
             this.PreguntasBox.TabIndex = 0;
             this.PreguntasBox.TabStop = false;
@@ -131,6 +131,7 @@
             this.Controls.Add(this.PreguntasBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FAQ";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAQ";

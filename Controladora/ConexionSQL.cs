@@ -30,7 +30,7 @@ namespace Controladora
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set ID= '" + ID + "',Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where ID='" + ID + "' and Apellido='" + Apellido + "' and Usuario='" + Usuario + "' and Email='" + Email + "' and Contrasena='" + Contrasena + "'", conn);
+                SqlCommand cmd = new SqlCommand("Update ListadeCuentas set ID= '" + ID + "',Nombre= '" + Nombre + "', Apellido='" + Apellido + "', Usuario='" + Usuario + "', Email='" + Email + "', Contrasena='" + Contrasena + "' where ID='" + ID + "'", conn);
                 cmd.CommandType = CommandType.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -132,6 +132,25 @@ namespace Controladora
                 return false;
             }
         }
-        
+        public int ObtenerID()
+        {
+            int id = 0;
+            using (SqlConnection conn = new SqlConnection(CadenaConexion))
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("SELECT MAX(ID) FROM ListadeCuentas", conn);
+                    cmd.CommandType = CommandType.Text;
+                    conn.Open();
+                    string id1 = cmd.ExecuteScalar().ToString();
+                    id = 0 + Convert.ToInt32(id1);
+                    return id;
+                }
+                catch(Exception)
+                {
+                    return id;
+                }
+            }
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
+        int identificador = 1;
 
         private void Admin_Load(object sender, EventArgs e)
         {
@@ -26,13 +27,22 @@ namespace Trabajo_POO_Grupo_4
             //this.listadeCuentasTableAdapter.Fill(this.proyectoDataSet.ListadeCuentas);
             ConexionSQL actualizar = new ConexionSQL();
             dgvGestionarUsuarios.DataSource = actualizar.actualizarlista();
-
+            txtID.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtUsuario.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtContra.Text = string.Empty;
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
+            identificador = 1;
+            ConexionSQL Obteneridentificacion = new ConexionSQL();
+            identificador = identificador + Obteneridentificacion.ObtenerID();
+            string id = Convert.ToString(identificador);
             ConexionSQL agregar = new ConexionSQL();
-            agregar.Agregar(txtID.Text,txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+            agregar.Agregar(id,txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             dgvGestionarUsuarios.DataSource = agregar.actualizarlista();
         }
 
@@ -66,6 +76,16 @@ namespace Trabajo_POO_Grupo_4
             this.Hide();
             facturas.ShowDialog();
             this.Close();
+        }
+
+        private void btnLimpiarDatos_Click(object sender, EventArgs e)
+        {
+            txtID.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtUsuario.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtContra.Text = string.Empty;
         }
     }
 }
