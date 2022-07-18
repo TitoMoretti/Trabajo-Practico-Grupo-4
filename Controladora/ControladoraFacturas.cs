@@ -14,21 +14,21 @@ namespace Controladora
         {
             string fecha = Convert.ToString(FechadeIngreso);
             int valido = 0;
-            if (Nombre==string.Empty)
+            if (Usuario==string.Empty)
             {
-                valido = 1;
+                valido = 3;
             }
             else
             {
-                if (Apellido == string.Empty)
+                if (Nombre == string.Empty)
                 {
-                    valido = 2;
+                    valido = 1;
                 }
                 else
                 {
-                    if(Usuario == string.Empty)
+                    if(Apellido == string.Empty)
                     {
-                        valido = 3;
+                        valido = 2;
                     }
                     else
                     {
