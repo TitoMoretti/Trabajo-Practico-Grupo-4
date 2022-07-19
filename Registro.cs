@@ -51,7 +51,7 @@ namespace Trabajo_POO_Grupo_4
             user.NombreLogin(txtUsuario.Text);
             user.ContraLogin(txtContra.Text);
             Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios();
-            int v1 = usuarios.validarRegister(txtNombre.Text,txtApellido.Text,txtUsuario.Text,txtEmail.Text,txtContra.Text);
+            int v1 = usuarios.validarRegister(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             switch (v1)
             {
                 case 1:
@@ -86,13 +86,13 @@ namespace Trabajo_POO_Grupo_4
                     msg.To.Add(txtEmail.Text);
                     msg.Subject = "NagaPark: Se ha creado una cuenta con este correo electrónico";
                     msg.SubjectEncoding = Encoding.UTF8;
-                    msg.Body = "Hola!!! Queremos informarle que se ha creado una cuenta de empleado para el parque NagaPark con los siguientes datos: <br><br>Nombre: " +txtNombre.Text+ "<br>Apellido: " +txtApellido.Text+ "<br>Nombre de Usuario: " +txtUsuario.Text+ "<br>Email: " + txtEmail.Text+ "<br><br>Ante cualquier duda sobre la cuenta, no dude en visitar nuestra oficina de atención para recibir más información. <br><br>Esperamos que tenga un buen día y saludos desde NagaPark!<br><br>Nagatoro Ichirō";
+                    msg.Body = "Hola!!! Queremos informarle que se ha creado una cuenta de empleado para el parque NagaPark con los siguientes datos: <br><br>Nombre: " + txtNombre.Text + "<br>Apellido: " + txtApellido.Text + "<br>Nombre de Usuario: " + txtUsuario.Text + "<br>Email: " + txtEmail.Text + "<br><br>Ante cualquier duda sobre la cuenta, no dude en visitar nuestra oficina de atención para recibir más información. <br><br>Esperamos que tenga un buen día y saludos desde NagaPark!<br><br>Nagatoro Ichirō";
                     msg.BodyEncoding = Encoding.UTF8;
                     msg.IsBodyHtml = true;
 
                     msg.From = new MailAddress("nagaparkentertainment@gmail.com");
                     SmtpClient cliente = new SmtpClient();
-                    cliente.Credentials = new System.Net.NetworkCredential("nagaparkentertainment@gmail.com", "icoelpvrwnoankop"); 
+                    cliente.Credentials = new System.Net.NetworkCredential("nagaparkentertainment@gmail.com", "icoelpvrwnoankop");
                     cliente.Port = 587;
                     cliente.EnableSsl = true;
                     cliente.Host = "smtp.gmail.com";
@@ -123,7 +123,7 @@ namespace Trabajo_POO_Grupo_4
                         MessageBox.Show("Ha ocurrido un error al enviar el mail, por lo tanto no podemos crear la cuenta. Por favor, introduzca su correo nuevamente y vuelva a intentarlo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtEmail.Text = string.Empty;
                     }
-                    break;     
+                    break;
             }
         }
 
@@ -140,7 +140,23 @@ namespace Trabajo_POO_Grupo_4
                 btnOjito.BackgroundImage = Properties.Resources.ojito;
                 bandera = 0;
                 txtContra.PasswordChar = '\0';
-            }   
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            {
+                MessageBox.Show("No se puede escribir números aquí.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            {
+                MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

@@ -159,6 +159,7 @@ namespace Trabajo_POO_Grupo_4
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(298, 22);
             this.txtApellido.TabIndex = 11;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombre
             // 
@@ -167,6 +168,7 @@ namespace Trabajo_POO_Grupo_4
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(297, 22);
             this.txtNombre.TabIndex = 10;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // comboBoxTipo
             // 
