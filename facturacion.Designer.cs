@@ -170,6 +170,7 @@ namespace Trabajo_POO_Grupo_4
             // 
             // comboBoxTipo
             // 
+            this.comboBoxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTipo.FormattingEnabled = true;
             this.comboBoxTipo.Items.AddRange(new object[] {
             "Seleccione uno...",
@@ -207,9 +208,9 @@ namespace Trabajo_POO_Grupo_4
             this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.Size = new System.Drawing.Size(142, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Usuario :";
+            this.label3.Text = "Usuario del Vendedor:";
             // 
             // label2
             // 
@@ -217,9 +218,9 @@ namespace Trabajo_POO_Grupo_4
             this.label2.Location = new System.Drawing.Point(17, 82);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
+            this.label2.Size = new System.Drawing.Size(123, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Apellido :";
+            this.label2.Text = "Apellido de Cliente:";
             // 
             // label1
             // 
@@ -227,9 +228,9 @@ namespace Trabajo_POO_Grupo_4
             this.label1.Location = new System.Drawing.Point(17, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.Size = new System.Drawing.Size(122, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre :";
+            this.label1.Text = "Nombre de Cliente:";
             // 
             // dgvGestionarFacturas
             // 
@@ -246,13 +247,14 @@ namespace Trabajo_POO_Grupo_4
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(599, 23);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(202, 16);
             this.label6.TabIndex = 8;
-            this.label6.Text = "FACTURACION DE NAGAPARK";
+            this.label6.Text = "FACTURACIÓN DE NAGAPARK";
             // 
             // btnBack
             // 
@@ -316,7 +318,7 @@ namespace Trabajo_POO_Grupo_4
             this.MaximizeBox = false;
             this.Name = "Facturacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Facturacion";
+            this.Text = "Facturación";
             this.Load += new System.EventHandler(this.facturacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).EndInit();

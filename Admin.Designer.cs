@@ -58,6 +58,7 @@
             this.listadeCuentasTableAdapter = new Trabajo_POO_Grupo_4.ProyectoDataSetTableAdapters.ListadeCuentasTableAdapter();
             this.Facturación = new System.Windows.Forms.Button();
             this.btnLimpiarDatos = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionarUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -354,6 +355,18 @@
             this.btnLimpiarDatos.UseVisualStyleBackColor = true;
             this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1040, 14);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(177, 94);
+            this.btnCerrarSesion.TabIndex = 20;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,6 +374,7 @@
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1405, 530);
+            this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnLimpiarDatos);
             this.Controls.Add(this.Facturación);
             this.Controls.Add(this.registrobox);
@@ -412,5 +426,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contrasenaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnLimpiarDatos;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

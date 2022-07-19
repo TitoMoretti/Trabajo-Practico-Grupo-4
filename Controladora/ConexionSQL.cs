@@ -82,6 +82,23 @@ namespace Controladora
                 return false;
             }
         }
+        public bool FacturasUser(string Usuario)
+        {
+            SqlConnection conn = new SqlConnection(CadenaConexion);
+            SqlCommand cmd = new SqlCommand("Select * from ListadeCuentas where Usuario=@u", conn);
+            cmd.Parameters.AddWithValue("@u", Usuario);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public bool ContraLogin(string Contrasena)
         {
             SqlConnection conn = new SqlConnection(CadenaConexion);

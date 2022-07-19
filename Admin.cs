@@ -142,7 +142,7 @@ namespace Trabajo_POO_Grupo_4
             Facturacion facturas = new Facturacion();
             this.Hide();
             facturas.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void btnLimpiarDatos_Click(object sender, EventArgs e)
@@ -153,6 +153,11 @@ namespace Trabajo_POO_Grupo_4
             txtUsuario.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtContra.Text = string.Empty;
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

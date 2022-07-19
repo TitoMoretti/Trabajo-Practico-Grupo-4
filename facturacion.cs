@@ -70,7 +70,7 @@ namespace Trabajo_POO_Grupo_4
         public void RegistrarFactura(string TipoTicket)
         {
             Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();
-            int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value); //revisar si ha guardado el texto del datetime
+            int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
             switch (v1)
             {
                 case 1:
@@ -102,26 +102,35 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string TipoTicket;
-            if (comboBoxTipo.SelectedIndex == 0)
+            Controladora.ConexionSQL user = new Controladora.ConexionSQL();
+            bool v1 = user.FacturasUser(txtUser.Text);
+            if (v1)
             {
-                MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                if (comboBoxTipo.SelectedIndex == 1)
+                string TipoTicket;
+                if (comboBoxTipo.SelectedIndex == 0)
                 {
-                    TipoTicket = "GENERAL";
-                    RegistrarFactura(TipoTicket);
+                    MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    if (comboBoxTipo.SelectedIndex == 2)
+                    if (comboBoxTipo.SelectedIndex == 1)
                     {
-                        TipoTicket = "VIP";
+                        TipoTicket = "GENERAL";
                         RegistrarFactura(TipoTicket);
                     }
+                    else
+                    {
+                        if (comboBoxTipo.SelectedIndex == 2)
+                        {
+                            TipoTicket = "VIP";
+                            RegistrarFactura(TipoTicket);
+                        }
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("El usuario no está registrado en el sistema. Por favor, ingrese un usuario existente y vuelva a intentarlo.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -135,6 +144,13 @@ namespace Trabajo_POO_Grupo_4
             ConexionSQLFacturas eliminar = new ConexionSQLFacturas();
             eliminar.Eliminar(FechadeIngreso.Value);
             dgvGestionarFacturas.DataSource = eliminar.actualizarlista();
+            txtUser.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            comboBoxTipo.SelectedIndex = 0;
+            txtCantidadTickets.Text = string.Empty;
+            FechadeIngreso.ResetText();
+            txtPrecio.Text = string.Empty;
         }
 
         private void dgvGestionarFacturas_CellClick(object sender, DataGridViewCellEventArgs e)
