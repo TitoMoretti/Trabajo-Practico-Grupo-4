@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using Controladora;
 using System.IO;
 
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -197,6 +201,81 @@ namespace Trabajo_POO_Grupo_4
             if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnDescargar_Click(object sender, EventArgs e)
+        {
+            ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista();
+
+            SaveFileDialog guardar = new SaveFileDialog();
+            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
+            
+            string paginahtml_texto = Properties.Resources.plantilla.ToString();
+
+            paginahtml_texto = paginahtml_texto.Replace("@FECHA", DateTime.Now.ToString("dd/MM/yyyy"));
+
+            string filas = string.Empty;
+
+            try
+            {
+                /*
+                foreach (DataGridViewRow row in dgvGestionarFacturas.Rows)
+                {
+                    filas += "<tr>";
+                    filas += "<td>" + row.Cells[0].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells["Nombre"].Value + "</td>";
+                    filas += "<td>" + row.Cells["Apellido"].Value + "</td>";
+                    filas += "<td>" + row.Cells["Tipo"].Value + "</td>";
+                    filas += "<td>" + row.Cells["Cantidad"].Value + "</td>";
+                    filas += "<td>" + row.Cells["Fecha"].Value + "</td>";
+                    filas += "<tr>";
+                }
+                */
+                for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++)
+                {
+                    filas += "<tr>";
+                    for (int col = 0; col < dgvGestionarFacturas.Rows[fila].Cells.Count; col++)
+                    {
+                        string valor = dgvGestionarFacturas.Rows[fila].Cells[col].Value.ToString();
+                        filas += "<td>" + valor + "</td>";
+
+                    }
+                    filas += "</tr>";
+                }
+                paginahtml_texto = paginahtml_texto.Replace("@FILAS", filas);
+
+                if (guardar.ShowDialog() == DialogResult.OK)
+                {
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                    {
+                        Document pdfDOC = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDOC, stream);
+
+                        pdfDOC.Open();
+                        pdfDOC.Add(new Phrase(""));
+
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.naga, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(80, 60);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDOC.LeftMargin,pdfDOC.Top -60);
+                        pdfDOC.Add(img);
+
+                        using (StringReader sr = new StringReader(paginahtml_texto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDOC, sr);
+                        }
+
+                        pdfDOC.Close();
+                        stream.Close();
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("No se pudo descargar pdf.");
             }
         }
     }

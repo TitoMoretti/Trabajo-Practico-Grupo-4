@@ -55,6 +55,7 @@ namespace Trabajo_POO_Grupo_4
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiarDatos = new System.Windows.Forms.Button();
+            this.btnDescargar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCuentasBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
@@ -210,9 +211,9 @@ namespace Trabajo_POO_Grupo_4
             this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 16);
+            this.label3.Size = new System.Drawing.Size(144, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Usuario del Vendedor:";
+            this.label3.Text = "Nombre del Vendedor:";
             // 
             // label2
             // 
@@ -274,7 +275,7 @@ namespace Trabajo_POO_Grupo_4
             this.btnAgregar.Location = new System.Drawing.Point(935, 64);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(121, 142);
+            this.btnAgregar.Size = new System.Drawing.Size(121, 98);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar Ventas";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -282,10 +283,10 @@ namespace Trabajo_POO_Grupo_4
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(935, 215);
+            this.btnEliminar.Location = new System.Drawing.Point(935, 282);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(121, 142);
+            this.btnEliminar.Size = new System.Drawing.Size(121, 83);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar Ventas";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -302,6 +303,17 @@ namespace Trabajo_POO_Grupo_4
             this.btnLimpiarDatos.UseVisualStyleBackColor = true;
             this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
             // 
+            // btnDescargar
+            // 
+            this.btnDescargar.Location = new System.Drawing.Point(935, 176);
+            this.btnDescargar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDescargar.Name = "btnDescargar";
+            this.btnDescargar.Size = new System.Drawing.Size(121, 98);
+            this.btnDescargar.TabIndex = 13;
+            this.btnDescargar.Text = "Descargar Factura";
+            this.btnDescargar.UseVisualStyleBackColor = true;
+            this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,6 +321,7 @@ namespace Trabajo_POO_Grupo_4
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1409, 569);
+            this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.btnLimpiarDatos);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -358,5 +371,6 @@ namespace Trabajo_POO_Grupo_4
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiarDatos;
+        private System.Windows.Forms.Button btnDescargar;
     }
 }
