@@ -28,17 +28,17 @@ namespace Trabajo_POO_Grupo_4
         {
             comboBoxTipo.SelectedIndex = 0;
             ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista();
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // cuando abrir esta ventana, actualizar y demuestra los datos que guardaron en sql en el datogridview
             txtUser.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
             comboBoxTipo.SelectedIndex = 0;
             txtCantidadTickets.Text = string.Empty;
             FechadeIngreso.ResetText();
-            txtPrecio.Text = string.Empty;
+            txtPrecio.Text = string.Empty;// iniciar con todos los textbox vacio
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)// boton para validar y calcular precio de ticket 
         {
             if (comboBoxTipo.SelectedIndex == 0)
             {
@@ -56,7 +56,7 @@ namespace Trabajo_POO_Grupo_4
                     {
                         int v1 = 0;
                         v1 = 2700 * (Convert.ToInt32(txtCantidadTickets.Text));
-                        txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v1);
+                        txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v1);// si aprueba todo los validaciones, muestra valor de los ticket 
                     }
                     else
                     {
@@ -64,7 +64,7 @@ namespace Trabajo_POO_Grupo_4
                         {
                             int v2 = 0;
                             v2 = 4000 * (Convert.ToInt32(txtCantidadTickets.Text));
-                            txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v2);
+                            txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v2);// si aprueba todo los validaciones, muestra valor de los ticket 
                         }
                     }
                 }
@@ -73,7 +73,7 @@ namespace Trabajo_POO_Grupo_4
 
         public void RegistrarFactura(string TipoTicket)
         {
-            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();
+            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();//llamar la funcion controladora para vertificar que completaron todos los datos requerido
             int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
             switch (v1)
             {
