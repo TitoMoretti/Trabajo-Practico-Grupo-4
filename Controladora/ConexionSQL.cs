@@ -55,7 +55,7 @@ namespace Controladora
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             {
-                SqlDataAdapter da = new SqlDataAdapter("Select * from ListadeCuentas", conn);
+                SqlDataAdapter da = new SqlDataAdapter("Select * from ListadeCuentas ORDER BY 1", conn);
                 da.SelectCommand.CommandType = CommandType.Text;
                 conn.Open();
                 da.Fill(dt);

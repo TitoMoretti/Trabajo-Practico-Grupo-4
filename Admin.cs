@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using System.Net.Mail;
+using System.Security.Cryptography;
 
 
 namespace Trabajo_POO_Grupo_4
@@ -96,8 +97,10 @@ namespace Trabajo_POO_Grupo_4
                             ConexionSQL Obteneridentificacion = new ConexionSQL();
                             identificador = identificador + Obteneridentificacion.ObtenerID();
                             string id = Convert.ToString(identificador);
+                            Controladora.ControladoraUsuarios encriptacion = new Controladora.ControladoraUsuarios();
+                            string contraencriptada = encriptacion.Encriptar(txtContra.Text);
                             ConexionSQL agregar = new ConexionSQL();
-                            agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+                            agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, contraencriptada);
                             dgvGestionarUsuarios.DataSource = agregar.actualizarlista();
                         }
                         catch (Exception)
@@ -134,7 +137,9 @@ namespace Trabajo_POO_Grupo_4
             txtApellido.Text = dgvGestionarUsuarios.SelectedCells[2].Value.ToString();
             txtUsuario.Text = dgvGestionarUsuarios.SelectedCells[3].Value.ToString();
             txtEmail.Text = dgvGestionarUsuarios.SelectedCells[4].Value.ToString();
-            txtContra.Text = dgvGestionarUsuarios.SelectedCells[5].Value.ToString();
+            Controladora.ControladoraUsuarios desencriptacion = new Controladora.ControladoraUsuarios();
+            string contradesencriptada = desencriptacion.Desencriptar(dgvGestionarUsuarios.SelectedCells[5].Value.ToString());
+            txtContra.Text = contradesencriptada;
         }
 
         private void Facturación_Click(object sender, EventArgs e)
@@ -174,6 +179,11 @@ namespace Trabajo_POO_Grupo_4
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void dgvGestionarUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvGestionarUsuarios.ReadOnly = true;
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using System.Net.Mail;
+using System.Security.Cryptography;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -105,8 +106,10 @@ namespace Trabajo_POO_Grupo_4
                             ConexionSQL Obteneridentificacion = new ConexionSQL();
                             identificador = identificador + Obteneridentificacion.ObtenerID();
                             string id = Convert.ToString(identificador);
+                            Controladora.ControladoraUsuarios encriptacion = new Controladora.ControladoraUsuarios();
+                            string contraencriptada = encriptacion.Encriptar(txtContra.Text);
                             ConexionSQL agregar = new ConexionSQL();
-                            agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
+                            agregar.Agregar(id, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, contraencriptada);
                             MessageBox.Show("El usuario se ha registrado con éxito. Ahora por favor inicie sesión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Login login = new Login();
                             this.Hide();

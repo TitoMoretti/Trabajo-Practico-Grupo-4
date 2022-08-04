@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Controladora;
+using System.Security.Cryptography;
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -58,8 +59,10 @@ namespace Trabajo_POO_Grupo_4
                             }
                             else
                             {
+                                Controladora.ControladoraUsuarios encriptacion = new Controladora.ControladoraUsuarios();
+                                string contraencriptada = encriptacion.Encriptar(txt_password.Text);
                                 ConexionSQL logear = new ConexionSQL();
-                                bool validologin = logear.Logear(txt_user.Text, txt_password.Text);
+                                bool validologin = logear.Logear(txt_user.Text, contraencriptada);
                                 if(validologin)
                                 {
                                     Admin root = new Admin();
