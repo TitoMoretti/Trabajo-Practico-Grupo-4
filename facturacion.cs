@@ -220,19 +220,6 @@ namespace Trabajo_POO_Grupo_4
 
             try
             {
-                /*
-                foreach (DataGridViewRow row in dgvGestionarFacturas.Rows)
-                {
-                    filas += "<tr>";
-                    filas += "<td>" + row.Cells[0].Value.ToString() + "</td>";
-                    filas += "<td>" + row.Cells["Nombre"].Value + "</td>";
-                    filas += "<td>" + row.Cells["Apellido"].Value + "</td>";
-                    filas += "<td>" + row.Cells["Tipo"].Value + "</td>";
-                    filas += "<td>" + row.Cells["Cantidad"].Value + "</td>";
-                    filas += "<td>" + row.Cells["Fecha"].Value + "</td>";
-                    filas += "<tr>";
-                }
-                */
                 for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++)
                 {
                     filas += "<tr>";
