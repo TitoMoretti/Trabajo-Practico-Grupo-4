@@ -186,3 +186,22 @@ C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Bouncy
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.dll
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xmlworker.dll
 C:\Users\vitto\source\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Controladora.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\BouncyCastle.Crypto.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xmlworker.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.pdb
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\Modelo.dll.config
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xml
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
+D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb

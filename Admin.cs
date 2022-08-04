@@ -162,7 +162,7 @@ namespace Trabajo_POO_Grupo_4
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space))
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -170,7 +170,7 @@ namespace Trabajo_POO_Grupo_4
 
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space))
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
