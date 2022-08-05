@@ -40,8 +40,6 @@ namespace Trabajo_POO_Grupo_4
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
             Controladora.ConexionSQL user = new Controladora.ConexionSQL();
-            user.NombreLogin(txtUsuario.Text);
-            user.ContraLogin(txtContra.Text);
             Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios();
             int v1 = usuarios.validarRegister(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text);
             switch (v1)

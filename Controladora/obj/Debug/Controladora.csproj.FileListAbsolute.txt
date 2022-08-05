@@ -205,3 +205,7 @@ D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.csproj.CopyComplete
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.dll
 D:\UAI\Segundo Año PrimerCuastrimetre\PROGRAMACIÓN ORIENTADA A OBJETOS\trabajo final\Trabajo-Practico-POO-Grupo-4\Controladora\obj\Debug\Controladora.pdb
+C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.dll
+C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\PC\source\repos\Trabajo POO GRUPO 4\Trabajo-Practico-POO-Grupo-4\Controladora\bin\Debug\itextsharp.xml

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Controladora;
-using System.Security.Cryptography;
+using System.Security.Cryptography; //Declaramos esta librería para poder encriptar/desenciptar la contraseña
 
 namespace Controladora
 {
