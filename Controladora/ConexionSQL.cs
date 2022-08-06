@@ -38,7 +38,7 @@ namespace Controladora
             }
         }
 
-        public void Eliminar(string ID) //Subrutina para eliminar una cuenta del SQL
+        public void Eliminar(string ID, string Nombre, string Apellido, string Usuario, string Email, string Contrasena) //Subrutina para eliminar una cuenta del SQL
         {
             using (SqlConnection conn = new SqlConnection(CadenaConexion)) //Nos conectaremos con LAPTOP-SANTI
             {

@@ -21,7 +21,6 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
-        int identificador = 1;
 
         private void Admin_Load(object sender, EventArgs e)
         {
@@ -93,6 +92,7 @@ namespace Trabajo_POO_Grupo_4
                         cliente.Send(msg);
                         try //Intentará guardar los datos de la cuenta en el SQL
                         {
+                            int identificador = 1;
                             identificador = identificador + user.ObtenerID(); //A la variable "identificador" se le sumará el ID más grande que se encuentre en el SQL, para así asegurarse que cada cuenta tenga su propio ID
                             string id = Convert.ToString(identificador); //Guardamos la variable "identificador" en un string
                             string contraencriptada = usuarios.Encriptar(txtContra.Text);  //Mandamos la contraseña a la subrutina "Encriptar", dentro de ControladoraUsuarios, para así poder enciptar la misma y guardarla en un string
@@ -117,7 +117,7 @@ namespace Trabajo_POO_Grupo_4
             //Evento realizado para poder eliminar una cuenta que esté dentro del SQL (haciendo click en alguna casilla del DataGridView)
 
             ConexionSQL eliminar = new ConexionSQL(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
-            eliminar.Eliminar(txtID.Text); //Mandamos el ID de la cuenta para que se busque en el SQL. Al encontrarlos eliminara toda la fila donde está el mismo
+            eliminar.Eliminar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text); //Mandamos el ID de la cuenta para que se busque en el SQL. Al encontrarlos eliminara toda la fila donde está el mismo
             dgvGestionarUsuarios.DataSource = eliminar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
         }
 
@@ -127,8 +127,8 @@ namespace Trabajo_POO_Grupo_4
 
             ConexionSQL modificar = new ConexionSQL(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
             Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios(); //Creamos una instancia para poder utilizar la clase "ControladoraUsuarios.cs", la cual está en "Controladora"
-            string contraencriptada = usuarios.Encriptar(txtContra.Text);  //Mandamos la contraseña a la subrutina "Encriptar", dentro de ControladoraUsuarios, para así poder enciptar la misma y guardarla en un string
-            modificar.Modificar(txtID.Text,txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, contraencriptada); //Mandamos todos los datos de la cuenta (y la contraseña encriptada) para poder buscar la fila donde tenga los datos del SQL, para así incorporar los cambios ingresados
+            string contraencriptada = usuarios.Encriptar(txtContra.Text); //Mandamos la contraseña a la subrutina "Encriptar", dentro de ControladoraUsuarios, para así poder enciptar la misma y guardarla en un string
+            modificar.Modificar(txtID.Text, txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, contraencriptada); //Mandamos todos los datos de la cuenta (y la contraseña encriptada) para poder buscar la fila donde tenga los datos del SQL, para así incorporar los cambios ingresados
             dgvGestionarUsuarios.DataSource = modificar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
         }
 
@@ -196,7 +196,7 @@ namespace Trabajo_POO_Grupo_4
         private void dgvGestionarUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //Evento realizado para que no puedar cambiar datos desde el DataGridView
-            
+
             dgvGestionarUsuarios.ReadOnly = true;
         }
     }
