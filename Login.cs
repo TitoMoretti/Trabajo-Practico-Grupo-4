@@ -19,7 +19,7 @@ namespace Trabajo_POO_Grupo_4
         {
             InitializeComponent();
         }
-        int bandera = 0; //variable utilizada para definir propiedades del "Ojito", para así ocultar o no la contraseña.
+        int bandera = 0; //variable utilizada para definir propiedades del "Ojito", para así ocultar o no la contraseña
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -28,6 +28,8 @@ namespace Trabajo_POO_Grupo_4
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            //Evento realizado para poder iniciar sesión
+
             Controladora.ConexionSQL usuarios = new Controladora.ConexionSQL(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
             Controladora.ControladoraUsuarios user = new Controladora.ControladoraUsuarios(); //Creamos una instancia para poder utilizar la clase "ControladoraUsuarios.cs", la cual está en "Controladora"
             int v1 = user.validarLogin(txt_user.Text, txt_password.Text); //Mandamos los datos del usuario (Nombre de Usuario y Contraseña) para ver si falta alguno de estos dos. De acuerdo a la situación, la variable v1 recibirá un valor.
@@ -84,7 +86,8 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            //Evento que abre un formulario para poder crear una cuenta.
+            //Evento que abre un formulario para poder crear una cuenta
+
             Registro crearcuenta = new Registro(); //Creamos una instancia para pdoer reconocer el formulario "Registro.cs"
             this.Hide(); //Esconde el form actual "Bienvenido.cs"
             crearcuenta.ShowDialog(); //Abre "Resgistro.cs"
@@ -98,7 +101,8 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnOjito_Click(object sender, EventArgs e)
         {
-            //De acuerdo al valor de la variable "bandera", se cambia el logo del "Ojito" y la contraseña se oculta o no
+            //Evento donde, de acuerdo al valor de la variable "bandera", se cambia el logo del "Ojito" y la contraseña se oculta o no
+
             if (bandera == 1) //Si la variable es igual a 1, se oculta la contraseña y se pone un ojo cerrado
             {
                 btnOjito.BackgroundImage = Properties.Resources.Ojito_cerrado; //Se pone un ojo cerrado

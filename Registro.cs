@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora; //Nos permite usar subrutinas del proyecto "Controladora"
-using System.Net.Mail; //Nos permite usar la liberia para enviar mails
+using System.Net.Mail; //Nos permite enviar mails
 
 namespace Trabajo_POO_Grupo_4
 {
@@ -30,6 +30,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             //Evento que limpia todos los TextBoxs
+
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
             txtUsuario.Text = string.Empty;
@@ -40,6 +41,7 @@ namespace Trabajo_POO_Grupo_4
         private void Registro_Load(object sender, EventArgs e)
         {
             //Cuando se abre el formulario, se asegura que todos los TextBoxs estén vacios
+
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
             txtUsuario.Text = string.Empty;
@@ -49,9 +51,11 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            //Evento realizado para poder crear una cuenta y almacenarla en un SQL
+
             Controladora.ConexionSQL user = new Controladora.ConexionSQL(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
             Controladora.ControladoraUsuarios usuarios = new Controladora.ControladoraUsuarios(); //Creamos una instancia para poder utilizar la clase "ControladoraUsuarios.cs", la cual está en "Controladora"
-            int v1 = usuarios.validarRegister(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text); //Mandamos todos los datos insertados para ver si falta alguno de estos o si el email y la contraseña insertadas son válidas. De acuerdo a la situación, la variable v1 recibirá un valor.
+            int v1 = usuarios.validarRegister(txtNombre.Text, txtApellido.Text, txtUsuario.Text, txtEmail.Text, txtContra.Text); //Mandamos todos los datos insertados para ver si falta alguno de estos o si el email y la contraseña insertadas son válidas. De acuerdo a la situación, la variable v1 recibirá un valor
             switch (v1)
             {
                 case 1: //Situación donde no ha escrito el Nombre
@@ -127,7 +131,8 @@ namespace Trabajo_POO_Grupo_4
 
         public void btnOjito_Click(object sender, EventArgs e)
         {
-            //De acuerdo al valor de la variable "bandera", se cambia el logo del "Ojito" y la contraseña se oculta o no
+            //Evento donde, de acuerdo al valor de la variable "bandera", se cambia el logo del "Ojito" y la contraseña se oculta o no
+
             if (bandera == 0) //Si la variable es igual a 0, se oculta la contraseña y se pone un ojo cerrado
             {
                 btnOjito.BackgroundImage = Properties.Resources.Ojito_cerrado; //Se pone un ojo cerrado
@@ -142,16 +147,20 @@ namespace Trabajo_POO_Grupo_4
             }
         }
 
-        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e) //Condición utilizada para asegurarse que no pueda escribir números dentro del Nombre
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e) 
         {
+            //Condición utilizada para asegurarse que no pueda escribir números dentro del Nombre
+
             if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)) //Solo admite Letras, el Espacio y el Retroceso
             {
                 MessageBox.Show("No se puede escribir números aquí.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
 
-        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e) //Condición utilizada para asegurarse que no pueda escribir números dentro del Apellido
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e) 
         {
+            //Condición utilizada para asegurarse que no pueda escribir números dentro del Apellido
+
             if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)) //Solo admite Letras, el Espacio y el Retroceso
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);

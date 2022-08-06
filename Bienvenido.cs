@@ -20,6 +20,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //Evento que abre un formulario para poder iniciar sesión.
+
             Login iniciarsesion = new Login(); //Creamos una instancia para pdoer reconocer el formulario "Login.cs"
             this.Hide(); //Esconde el form actual "Bienvenido.cs"
             iniciarsesion.ShowDialog(); //Abre "Login.cs"
@@ -29,6 +30,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             //Evento que abre un formulario para poder crear una cuenta.
+
             Registro crearcuenta = new Registro(); //Creamos una instancia para pdoer reconocer el formulario "Registro.cs"
             this.Hide(); //Esconde el form actual "Bienvenido.cs"
             crearcuenta.ShowDialog(); //Abre "Resgistro.cs"
@@ -42,6 +44,8 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnFAQ_Click(object sender, EventArgs e)
         {
+            //Evento que abre un formulario para poder ver una sección de preguntas y respuestas.
+
             FAQ FAQ = new FAQ(); //Creamos una instancia para pdoer reconocer el formulario "FAQ.cs"
             this.Hide(); //Esconde el form actual "Bienvenido.cs"
             FAQ.ShowDialog(); //Abre "FAQ.cs"
