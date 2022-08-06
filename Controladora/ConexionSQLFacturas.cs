@@ -13,7 +13,7 @@ namespace Controladora
     {
         private string CadenaConexion = "Data Source=LAPTOP-SANTI;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False";
 
-
+        // Agregamos a la base de datos los datos proporcionados
         public void AgregarFactura(string Nombre, string Apellido, string Usuario, string TipoTicket, string Cantidad, DateTime Fecha)
         {
             string Date=Convert.ToString(Fecha);
@@ -27,6 +27,7 @@ namespace Controladora
             }
         }
 
+        // Eliminamos una factura utilizando la fecha como identificador
         public void Eliminar(DateTime Fecha)
         {
             string Date = Convert.ToString(Fecha);
@@ -40,6 +41,7 @@ namespace Controladora
             }
         }
 
+        // Actualiza la base de datos para traer los datos más recientes
         public DataTable actualizarlista()
         {
             DataTable dt = new DataTable();

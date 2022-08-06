@@ -11,6 +11,7 @@ namespace Controladora
 {
     public class ControladoraUsuarios
     {
+        // Validamos los campos del login
         public int validarLogin(string Usuario,string Contrasena)
         {
             int valido = 0;
@@ -31,6 +32,8 @@ namespace Controladora
             }
             return valido;
         }
+
+        // Validamos los campos del registro
         public int validarRegister(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             int valido = 0;
@@ -111,6 +114,8 @@ namespace Controladora
             }
             return valido;
         }
+
+        // Función para encriptar la contraseña proporcionada
         public string Encriptar(string contraseña)
         {
             //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo
@@ -127,6 +132,8 @@ namespace Controladora
                 }
             }
         }
+
+        // Función para desencriptar la contraseña. (Solo la utilizamos en el panel del Admin para que a modo de ejemplo visual se pueda ver en texto plano)
         public string Desencriptar(string encriptado)
         {
             //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo

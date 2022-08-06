@@ -27,18 +27,18 @@ namespace Trabajo_POO_Grupo_4
         private void facturacion_Load(object sender, EventArgs e)
         {
             comboBoxTipo.SelectedIndex = 0;
-            ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // cuando abrir esta ventana, actualizar y demuestra los datos que guardaron en sql en el datogridview
+            ConexionSQLFacturas actualizar = new ConexionSQLFacturas(); // Se genera la conexion con FacturasSQL
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // Muestra los datos que guardaron en sql en el datagridview
             txtUser.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
             comboBoxTipo.SelectedIndex = 0;
             txtCantidadTickets.Text = string.Empty;
             FechadeIngreso.ResetText();
-            txtPrecio.Text = string.Empty;// iniciar con todos los textbox vacio
+            txtPrecio.Text = string.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)// boton para validar y calcular precio de ticket 
+        private void button1_Click(object sender, EventArgs e)// Botón para validar y calcular el precio del ticket 
         {
             if (comboBoxTipo.SelectedIndex == 0)
             {
@@ -71,9 +71,10 @@ namespace Trabajo_POO_Grupo_4
             }
         }
 
+        // Función que valida que los campos no estén vacios
         public void RegistrarFactura(string TipoTicket)
         {
-            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();//llamar la funcion controladora para vertificar que completaron todos los datos requerido
+            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();
             int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
             switch (v1)
             {
@@ -104,6 +105,7 @@ namespace Trabajo_POO_Grupo_4
             }
         }
 
+        // Función para agregar una factura. Además verifica que el usuario exista en la base de datos
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Controladora.ConexionSQL user = new Controladora.ConexionSQL();
@@ -143,6 +145,7 @@ namespace Trabajo_POO_Grupo_4
             this.Close();
         }
 
+        // Función para eliminar una factura
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             ConexionSQLFacturas eliminar = new ConexionSQLFacturas();
@@ -157,6 +160,8 @@ namespace Trabajo_POO_Grupo_4
             txtPrecio.Text = string.Empty;
         }
 
+
+        // Completa los campos automaticamente con los valores de la fila que este seleccionando en el datagridview
         private void dgvGestionarFacturas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtUser.Text = dgvGestionarFacturas.SelectedCells[0].Value.ToString();
@@ -204,13 +209,14 @@ namespace Trabajo_POO_Grupo_4
             }
         }
 
+        // Botón para descargar la factura
         private void btnDescargar_Click(object sender, EventArgs e)
         {
             ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista();
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // Actualizamos con los ultimos datos de la base de datos
 
             SaveFileDialog guardar = new SaveFileDialog();
-            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
+            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf"; // Guardamos el pdf con el nombre de la fecha del día (se puede cambiar)
             
             string paginahtml_texto = Properties.Resources.plantilla.ToString();
 
@@ -218,6 +224,7 @@ namespace Trabajo_POO_Grupo_4
 
             string filas = string.Empty;
 
+            // Recorremos el datagridview para poder cargar los datos y que estos se vean replicados en la factura que descargamos
             try
             {
                 for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++)
@@ -233,6 +240,7 @@ namespace Trabajo_POO_Grupo_4
                 }
                 paginahtml_texto = paginahtml_texto.Replace("@FILAS", filas);
 
+                // Aca se crea el pdf y se cargan algunos datos más, como la imagen que nosotros queremos para la factura
                 if (guardar.ShowDialog() == DialogResult.OK)
                 {
                     using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))

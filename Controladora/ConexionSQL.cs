@@ -22,7 +22,7 @@ namespace Controladora
                 cmd.CommandType = CommandType.Text; //Indica como se interpretará el comando anterior para mayor claridad al momento de ejecutarlo en el SQL
                 conn.Open(); //Abre la conexión con el SQL
                 cmd.ExecuteNonQuery(); //Ejecuta el comando 
-                actualizarlista(); //invoca una función para poder actualizar el DataGridView del formulario "Admin.cs" (dvgGestionarUsuarios)
+                actualizarlista(); //Invoca una función para poder actualizar el DataGridView del formulario "Admin.cs" (dvgGestionarUsuarios)
             }   
         }
 
