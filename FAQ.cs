@@ -19,7 +19,7 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //Cierra el formulario actual
         }
     }
 }

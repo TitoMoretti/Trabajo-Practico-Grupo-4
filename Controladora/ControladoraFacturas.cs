@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Controladora
 {
-    //Valimos que los campos para generar una factura no esten vacíos
+    //Validamos que los campos para generar una factura no esten vacíos
     public class ControladoraFacturas
     {
         public int validarFactura(string Nombre, string Apellido, string Usuario, string TipoTicket, string CantidadTicket, DateTime FechadeIngreso)
