@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Controladora;
+using System.Security.Cryptography; //Declaramos esta librería para poder encriptar/desenciptar la contraseña
 
 namespace Controladora
 {
     public class ControladoraUsuarios
     {
+        // Validamos los campos del login
         public int validarLogin(string Usuario,string Contrasena)
         {
             int valido = 0;
@@ -30,6 +32,8 @@ namespace Controladora
             }
             return valido;
         }
+
+        // Validamos los campos del registro
         public int validarRegister(string Nombre, string Apellido, string Usuario, string Email, string Contrasena)
         {
             int valido = 0;
@@ -109,6 +113,42 @@ namespace Controladora
                 }
             }
             return valido;
+        }
+
+        // Función para encriptar la contraseña proporcionada
+        public string Encriptar(string contraseña)
+        {
+            //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo
+            using (TripleDESCryptoServiceProvider servicioEncriptadoDES = new TripleDESCryptoServiceProvider())
+            {
+                //Calcula el valor del Hash
+                using (MD5CryptoServiceProvider servicioProveedorMD5 = new MD5CryptoServiceProvider())
+                {
+                    byte[] byteHash = servicioProveedorMD5.ComputeHash(Encoding.UTF8.GetBytes("Grupo-4"));
+                    servicioEncriptadoDES.Key = byteHash;
+                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas
+                    byte[] dato = Encoding.Unicode.GetBytes(contraseña);
+                    return Convert.ToBase64String(servicioEncriptadoDES.CreateEncryptor().TransformFinalBlock(dato, 0, dato.Length));
+                }
+            }
+        }
+
+        // Función para desencriptar la contraseña. (Solo la utilizamos en el panel del Admin para que a modo de ejemplo visual se pueda ver en texto plano)
+        public string Desencriptar(string encriptado)
+        {
+            //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo
+            using (TripleDESCryptoServiceProvider servicioEncriptadoDES = new TripleDESCryptoServiceProvider())
+            {
+                //Calcula el valor del Hash
+                using (MD5CryptoServiceProvider servicioProveedorMD5 = new MD5CryptoServiceProvider())
+                {
+                    byte[] byteHash = servicioProveedorMD5.ComputeHash(Encoding.UTF8.GetBytes("Grupo-4"));
+                    servicioEncriptadoDES.Key = byteHash;
+                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas
+                    byte[] byteBuff = Convert.FromBase64String(encriptado);
+                    return Encoding.Unicode.GetString(servicioEncriptadoDES.CreateDecryptor().TransformFinalBlock(byteBuff, 0, byteBuff.Length));
+                }
+            }
         }
     }
 }

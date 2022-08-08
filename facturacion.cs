@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controladora;
+using Controladora; //Nos permite usar subrutinas del proyecto "Controladora"
 using System.IO;
 
 using iTextSharp.text;
@@ -26,128 +26,11 @@ namespace Trabajo_POO_Grupo_4
 
         private void facturacion_Load(object sender, EventArgs e)
         {
+            //Cuando se abre el formulario, se asegura que todos los TextBoxs, ComboBox y DateTimePicker estén vacios y que el DataGridView esté actualizado con la información del SQL
+
             comboBoxTipo.SelectedIndex = 0;
-            ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // cuando abrir esta ventana, actualizar y demuestra los datos que guardaron en sql en el datogridview
-            txtUser.Text = string.Empty;
-            txtNombre.Text = string.Empty;
-            txtApellido.Text = string.Empty;
-            comboBoxTipo.SelectedIndex = 0;
-            txtCantidadTickets.Text = string.Empty;
-            FechadeIngreso.ResetText();
-            txtPrecio.Text = string.Empty;// iniciar con todos los textbox vacio
-        }
-
-        private void button1_Click(object sender, EventArgs e)// boton para validar y calcular precio de ticket 
-        {
-            if (comboBoxTipo.SelectedIndex == 0)
-            {
-                MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                if (txtCantidadTickets.Text == String.Empty)
-                {
-                    MessageBox.Show("No ha escrito cuantos tickets. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    if (comboBoxTipo.SelectedIndex == 1)
-                    {
-                        int v1 = 0;
-                        v1 = 2700 * (Convert.ToInt32(txtCantidadTickets.Text));
-                        txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v1);// si aprueba todo los validaciones, muestra valor de los ticket 
-                    }
-                    else
-                    {
-                        if (comboBoxTipo.SelectedIndex == 2)
-                        {
-                            int v2 = 0;
-                            v2 = 4000 * (Convert.ToInt32(txtCantidadTickets.Text));
-                            txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v2);// si aprueba todo los validaciones, muestra valor de los ticket 
-                        }
-                    }
-                }
-            }
-        }
-
-        public void RegistrarFactura(string TipoTicket)
-        {
-            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();//llamar la funcion controladora para vertificar que completaron todos los datos requerido
-            int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
-            switch (v1)
-            {
-                case 1:
-                    MessageBox.Show("No se ha insertado ningún nombre. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                case 2:
-                    MessageBox.Show("No se ha insertado ningún apellido. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                case 3:
-                    MessageBox.Show("No se ha insertado ningún nombre de usuario. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                case 4:
-                    MessageBox.Show("No se ha insertado la cantidad de tickets. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                case 5:
-                    try
-                    {
-                        ConexionSQLFacturas agregar = new ConexionSQLFacturas();
-                        agregar.AgregarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
-                        dgvGestionarFacturas.DataSource = agregar.actualizarlista();
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Ha ocurrido un problema al momento de registrar su factura. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    break;
-            }
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Controladora.ConexionSQL user = new Controladora.ConexionSQL();
-            bool v1 = user.FacturasUser(txtUser.Text);
-            if (v1)
-            {
-                string TipoTicket;
-                if (comboBoxTipo.SelectedIndex == 0)
-                {
-                    MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    if (comboBoxTipo.SelectedIndex == 1)
-                    {
-                        TipoTicket = "GENERAL";
-                        RegistrarFactura(TipoTicket);
-                    }
-                    else
-                    {
-                        if (comboBoxTipo.SelectedIndex == 2)
-                        {
-                            TipoTicket = "VIP";
-                            RegistrarFactura(TipoTicket);
-                        }
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("El usuario no está registrado en el sistema. Por favor, ingrese un usuario existente y vuelva a intentarlo.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            ConexionSQLFacturas eliminar = new ConexionSQLFacturas();
-            eliminar.Eliminar(FechadeIngreso.Value);
-            dgvGestionarFacturas.DataSource = eliminar.actualizarlista();
+            ConexionSQLFacturas actualizar = new ConexionSQLFacturas(); // Se genera la conexion con FacturasSQL
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // Muestra los datos que guardaron en sql en el datagridview
             txtUser.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
@@ -157,6 +40,133 @@ namespace Trabajo_POO_Grupo_4
             txtPrecio.Text = string.Empty;
         }
 
+        private void button1_Click(object sender, EventArgs e) // Botón para validar y calcular el precio del ticket 
+        {
+            if (comboBoxTipo.SelectedIndex == 0) //Situación donde no ha seleccionado ninguna opción en el ComboBox "Tipo de Ticket"
+            {
+                MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (txtCantidadTickets.Text == String.Empty) //Situación donde no ha escrito la cantidad de tickets en el TextBox correspondiente
+                {
+                    MessageBox.Show("No ha escrito cuantos tickets. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if (comboBoxTipo.SelectedIndex == 1) //Situación donde ha seleccionado opción GENERAL en el ComboBox "Tipo de Ticket"
+                    {
+                        int v1 = 0;
+                        v1 = 2700 * (Convert.ToInt32(txtCantidadTickets.Text));
+                        txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v1);// si aprueba todo los validaciones, muestra valor de los tickets en un TextBox
+                    }
+                    else
+                    {
+                        if (comboBoxTipo.SelectedIndex == 2) //Situación donde ha seleccionado opción VIP en el ComboBox "Tipo de Ticket"
+                        {
+                            int v2 = 0;
+                            v2 = 4000 * (Convert.ToInt32(txtCantidadTickets.Text));
+                            txtPrecio.Text = "PRECIO ESTIMADO: $" + Convert.ToString(v2);// si aprueba todo los validaciones, muestra valor de los tickets en un TextBox
+                        }
+                    }
+                }
+            }
+        }
+
+        // Función que valida que los campos no estén vacios y manda los datos al SQL
+        public void RegistrarFactura(string TipoTicket)
+        {
+            Controladora.ControladoraFacturas Facturas = new Controladora.ControladoraFacturas();
+            int v1 = Facturas.validarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);
+            switch (v1)
+            {
+                case 1: //Situación donde no ha escrito el Nombre
+                    MessageBox.Show("No se ha insertado ningún nombre. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case 2: //Situación donde no ha escrito el Apellido
+                    MessageBox.Show("No se ha insertado ningún apellido. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case 3: //Situación donde no ha escrito el Nombre de Usuario
+                    MessageBox.Show("No se ha insertado ningún nombre de usuario. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case 4: //Situación donde no ha escrito la Cantidad de Tickets
+                    MessageBox.Show("No se ha insertado la cantidad de tickets. Por favor, revise la información y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case 5: //Situación donde no falta nada
+                    try //Intentará guardar los datos de la factura en el SQL
+                    {
+                        ConexionSQLFacturas agregar = new ConexionSQLFacturas(); //Creamos una instancia para poder utilizar la clase "ConexiónSQLFacturas.cs", la cual está en "Controladora"
+                        agregar.AgregarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);  //Mandamos todos los datos de la factura para poder incorporar la misma dentro del SQL
+                        dgvGestionarFacturas.DataSource = agregar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
+                    }
+                    catch (Exception) //En caso de que no se haya podido guardar los datos por cualquier razón, se mostrará un mensaje de error
+                    {
+                        MessageBox.Show("Ha ocurrido un problema al momento de registrar su factura. Le pedimos que verifique los datos introducidos anteriormente y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
+            }
+        }
+
+        // Función para verificar que el usuario exista en la base de datos y que haya seleccionado una opción en el ComboBox "Tipo de Ticket". Al analizar eso, se procede a la subrutina "RegistrarFactura" 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Controladora.ConexionSQL user = new Controladora.ConexionSQL(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
+            bool v1 = user.FacturasUser(txtUser.Text); //Mando el Nombre de Usuario para poder ver si esté está en el SQL. De acuerdo al resultado, se le asignara un valor booleano a "v1"
+            if (v1) //Validación realizada para ver si el usuario existe en el SQL
+            {
+                string TipoTicket;
+                if (comboBoxTipo.SelectedIndex == 0) //Situación donde no ha seleccionado ninguna opción en el ComboBox "Tipo de Ticket"
+                {
+                    MessageBox.Show("No ha elegido un tipo de ticket. Por favor, seleccione uno y vuelva a intentarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if (comboBoxTipo.SelectedIndex == 1) //Situación donde ha seleccionado opción GENERAL en el ComboBox "Tipo de Ticket"
+                    {
+                        TipoTicket = "GENERAL";
+                        RegistrarFactura(TipoTicket);
+                    }
+                    else
+                    {
+                        if (comboBoxTipo.SelectedIndex == 2) //Situación donde ha seleccionado opción VIP en el ComboBox "Tipo de Ticket"
+                        {
+                            TipoTicket = "VIP";
+                            RegistrarFactura(TipoTicket);
+                        }
+                    }
+                }
+            }
+            else //En caso de que el ususario no esté en el SQL, se mostrará un mensaje de error
+            {
+                MessageBox.Show("El usuario no está registrado en el sistema. Por favor, ingrese un usuario existente y vuelva a intentarlo.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Cierra el formulario actual
+        }
+
+        // Función para eliminar una factura
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ConexionSQLFacturas eliminar = new ConexionSQLFacturas(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
+            eliminar.Eliminar(FechadeIngreso.Value); //Mandamos la fecha de ingreso para encontrar la fila que tenga la misma fecha. Al encontrarla, la borrará
+            dgvGestionarFacturas.DataSource = eliminar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
+            
+            //Limpiamos todos los TextBoxs, ComboBox y DateTimePicker
+
+            txtUser.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            comboBoxTipo.SelectedIndex = 0;
+            txtCantidadTickets.Text = string.Empty;
+            FechadeIngreso.ResetText();
+            txtPrecio.Text = string.Empty;
+        }
+
+
+        // Completa los campos automaticamente con los valores de la fila que este seleccionando en el datagridview
         private void dgvGestionarFacturas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtUser.Text = dgvGestionarFacturas.SelectedCells[0].Value.ToString();
@@ -179,6 +189,8 @@ namespace Trabajo_POO_Grupo_4
 
         private void btnLimpiarDatos_Click(object sender, EventArgs e)
         {
+            //Evento que limpia todos los TextBoxs, ComboBox y DateTimePicker
+
             txtUser.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
@@ -190,7 +202,9 @@ namespace Trabajo_POO_Grupo_4
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            //Condición utilizada para asegurarse que no pueda escribir números dentro del Nombre
+
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)) //Solo admite Letras, el Espacio y el Retroceso
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -198,19 +212,32 @@ namespace Trabajo_POO_Grupo_4
 
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            //Condición utilizada para asegurarse que no pueda escribir números dentro del Apellido
+
+            if (e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)) //Solo admite Letras, el Espacio y el Retroceso
             {
                 MessageBox.Show("No se puede escribir números aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
+        private void txtCantidadTickets_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Condición utilizada para asegurarse que no pueda escribir letras dentro de la Cantidad de Tickets
+
+            if (e.Handled = (char.IsLetter(e.KeyChar) || e.KeyChar != (char)Keys.Back || e.KeyChar != (char)Keys.Space)) //Solo admite Números, el Espacio y el Retroceso
+            {
+                MessageBox.Show("No se puede escribir letras aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // Botón para descargar la factura
         private void btnDescargar_Click(object sender, EventArgs e)
         {
             ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista();
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // Actualizamos con los ultimos datos de la base de datos
 
             SaveFileDialog guardar = new SaveFileDialog();
-            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
+            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf"; // Guardamos el pdf con el nombre de la fecha del día (se puede cambiar)
             
             string paginahtml_texto = Properties.Resources.plantilla.ToString();
 
@@ -218,7 +245,8 @@ namespace Trabajo_POO_Grupo_4
 
             string filas = string.Empty;
 
-            try
+            // Recorremos el datagridview para poder cargar los datos y que estos se vean replicados en la factura que descargamos
+            try //Intentará crear el PDF
             {
                 for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++)
                 {
@@ -233,6 +261,7 @@ namespace Trabajo_POO_Grupo_4
                 }
                 paginahtml_texto = paginahtml_texto.Replace("@FILAS", filas);
 
+                // Aca se crea el pdf y se cargan algunos datos más, como la imagen que nosotros queremos para la factura
                 if (guardar.ShowDialog() == DialogResult.OK)
                 {
                     using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
@@ -260,10 +289,10 @@ namespace Trabajo_POO_Grupo_4
                     }
                 }
             }
-            catch(Exception)
+            catch(Exception) //En caso de que no se haya podido crear el PDF, se mostrará un mensaje de error
             {
-                MessageBox.Show("No se pudo descargar pdf.");
+                MessageBox.Show("No se pudo descargar el PDF. Por favor, vuelva a intentarlo","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-        }
+        } 
     }
 }

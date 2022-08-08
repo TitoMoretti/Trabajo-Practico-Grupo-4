@@ -50,7 +50,7 @@
             this.PreguntasBox.Location = new System.Drawing.Point(11, 60);
             this.PreguntasBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PreguntasBox.Name = "PreguntasBox";
-            this.PreguntasBox.Padding = new System.Windows.Forms.Padding(4);
+            this.PreguntasBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreguntasBox.Size = new System.Drawing.Size(604, 258);
             this.PreguntasBox.TabIndex = 0;
             this.PreguntasBox.TabStop = false;
@@ -70,7 +70,7 @@
             // 
             this.lblPregunta2.AutoSize = true;
             this.lblPregunta2.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPregunta2.Location = new System.Drawing.Point(-2, 144);
+            this.lblPregunta2.Location = new System.Drawing.Point(-3, 144);
             this.lblPregunta2.Name = "lblPregunta2";
             this.lblPregunta2.Size = new System.Drawing.Size(546, 25);
             this.lblPregunta2.TabIndex = 2;
@@ -111,7 +111,7 @@
             // 
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnCerrar.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnCerrar.Location = new System.Drawing.Point(229, 323);
+            this.btnCerrar.Location = new System.Drawing.Point(229, 322);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(157, 59);
@@ -125,10 +125,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trabajo_POO_Grupo_4.Properties.Resources.wallpaper;
-            this.ClientSize = new System.Drawing.Size(626, 394);
+            this.ClientSize = new System.Drawing.Size(627, 394);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.picFAQ);
             this.Controls.Add(this.PreguntasBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
