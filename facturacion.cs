@@ -234,51 +234,51 @@ namespace Trabajo_POO_Grupo_4
         private void btnDescargar_Click(object sender, EventArgs e)
         {
             ConexionSQLFacturas actualizar = new ConexionSQLFacturas();
-            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); // Actualizamos con los ultimos datos de la base de datos
+            dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); //Actualizamos con los ultimos datos de la base de datos
 
             SaveFileDialog guardar = new SaveFileDialog();
-            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf"; // Guardamos el archivo en formato de pdf con el nombre de la fecha del día (se puede cambiar)
+            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf"; //Guardamos el archivo en formato de pdf con el nombre de la fecha del día (se puede cambiar)
             
-            string paginahtml_texto = Properties.Resources.plantilla.ToString();//utilizamos la plantilla de html que guardamos en resources
+            string paginahtml_texto = Properties.Resources.plantilla.ToString(); //Utilizamos la plantilla de html que guardamos en resources
 
-            paginahtml_texto = paginahtml_texto.Replace("@FECHA", DateTime.Now.ToString("dd/MM/yyyy"));//asignar la fecha del dia para mostrar en  pdf 
+            paginahtml_texto = paginahtml_texto.Replace("@FECHA", DateTime.Now.ToString("dd/MM/yyyy")); //Asignar la fecha del dia para mostrar en  pdf 
 
-            string filas = string.Empty; // definir un variable de filas para guardar los datos de datogridview
+            string filas = string.Empty; //Definir un variable de filas para guardar los datos de datogridview
 
-            // Recorremos el datagridview para poder cargar los datos y que estos se vean replicados en la factura que descargamos
+            //Recorremos el datagridview para poder cargar los datos y que estos se vean replicados en la factura que descargamos
             try //Intentará recorrer todas las filas 
             {
-                for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++)// recorrer todas las filas de datogridview
+                for (int fila = 0; fila < dgvGestionarFacturas.Rows.Count - 1; fila++) //Recorrer todas las filas de datogridview
                 {
-                    filas += "<tr>";//arrancar una fila
-                    for (int col = 0; col < dgvGestionarFacturas.Rows[fila].Cells.Count; col++)//recorrer todos los columnas de la fila definido
+                    filas += "<tr>"; //Arrancar una fila
+                    for (int col = 0; col < dgvGestionarFacturas.Rows[fila].Cells.Count; col++) //Recorrer todos los columnas de la fila definido
                     {
-                        string valor = dgvGestionarFacturas.Rows[fila].Cells[col].Value.ToString();// transformar datos a string para puede guardar
-                        filas += "<td>" + valor + "</td>";// guardar todos los valores de fila en variable" fila "
+                        string valor = dgvGestionarFacturas.Rows[fila].Cells[col].Value.ToString(); //Transformar datos a string para puede guardar
+                        filas += "<td>" + valor + "</td>"; //Guardar todos los valores de fila en variable" fila "
 
                     }
-                    filas += "</tr>";//cerrar la fila 
+                    filas += "</tr>";//Cerrar la fila 
                 }
-                paginahtml_texto = paginahtml_texto.Replace("@FILAS", filas);//pasar datos que se almacena fila a la tabla de HTML
+                paginahtml_texto = paginahtml_texto.Replace("@FILAS", filas); //Pasar datos que se almacena fila a la tabla de HTML
 
-                // Aca se crea el pdf y se cargan algunos datos más, como la imagen que nosotros queremos para la factura
+                //Aca se crea el pdf y se cargan algunos datos más, como la imagen que nosotros queremos para la factura
                 if (guardar.ShowDialog() == DialogResult.OK)
                 {
                     using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
-                        Document pdfDOC = new Document(PageSize.A4, 25, 25, 25, 25);//dar tamaño y detalle de pdf
+                        Document pdfDOC = new Document(PageSize.A4, 25, 25, 25, 25); //Dar tamaño y detalle de pdf
 
-                        PdfWriter writer = PdfWriter.GetInstance(pdfDOC, stream);// dar escritura en documentos que definimos 
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDOC, stream); //Dar escritura en documentos que definimos 
 
                         pdfDOC.Open();
                         pdfDOC.Add(new Phrase(""));
-                        //dar icono para pdf
+                        //Dar icono para pdf
                         iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.naga, System.Drawing.Imaging.ImageFormat.Png);
                         img.ScaleToFit(80, 60);
                         img.Alignment = iTextSharp.text.Image.UNDERLYING;
                         img.SetAbsolutePosition(pdfDOC.LeftMargin,pdfDOC.Top -60);
                         pdfDOC.Add(img);
-                        // transformar la pagina de html con los datos  a pdf 
+                        //Transformar la pagina de html con los datos  a pdf 
                         using (StringReader sr = new StringReader(paginahtml_texto))
                         {
                             XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDOC, sr);
