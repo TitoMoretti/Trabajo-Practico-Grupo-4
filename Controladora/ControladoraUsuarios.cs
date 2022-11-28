@@ -85,7 +85,7 @@ namespace Controladora
 
                                     if (len.IsMatch(password))
                                     {
-                                        //Password Válido
+                                        //Contraseña Válida
                                         if (num.IsMatch(password))
                                         {
                                             if (alpha.IsMatch(password))
@@ -121,14 +121,14 @@ namespace Controladora
             //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo
             using (TripleDESCryptoServiceProvider servicioEncriptadoDES = new TripleDESCryptoServiceProvider())
             {
-                //Calcula el valor del Hash
+                //Calcula el valor del Hash y establece su algoritmo (Usamos MD5 porque nos acepta un mensaje de cualquier longitud).
                 using (MD5CryptoServiceProvider servicioProveedorMD5 = new MD5CryptoServiceProvider())
                 {
                     byte[] byteHash = servicioProveedorMD5.ComputeHash(Encoding.UTF8.GetBytes("Grupo-4"));
-                    servicioEncriptadoDES.Key = byteHash;
-                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas
-                    byte[] dato = Encoding.Unicode.GetBytes(contraseña);
-                    return Convert.ToBase64String(servicioEncriptadoDES.CreateEncryptor().TransformFinalBlock(dato, 0, dato.Length));
+                    servicioEncriptadoDES.Key = byteHash; //Se va a necesitar una llave para poder encriptar el mensaje
+                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas, para mostrar como debería estar encriptado (encripta cada bloque individualmente).
+                    byte[] dato = Encoding.Unicode.GetBytes(contraseña); //Guardamos la contraseña
+                    return Convert.ToBase64String(servicioEncriptadoDES.CreateEncryptor().TransformFinalBlock(dato, 0, dato.Length)); //Realiza la encriptación, siguiendo los valores introducidos anteriormente, y el resultado se convierte en un string que será enviado.
                 }
             }
         }
@@ -139,14 +139,14 @@ namespace Controladora
             //Encriptacion TripleDES(Triple Data Encryption Standard), creando instancia de la clase TripleDESCryptoServiceProvider, que le da la funcionalidad al algoritmo
             using (TripleDESCryptoServiceProvider servicioEncriptadoDES = new TripleDESCryptoServiceProvider())
             {
-                //Calcula el valor del Hash
+                //Calcula el valor del Hash y establece su algoritmo (Usamos MD5 porque nos acepta un mensaje de cualquier longitud).
                 using (MD5CryptoServiceProvider servicioProveedorMD5 = new MD5CryptoServiceProvider())
                 {
                     byte[] byteHash = servicioProveedorMD5.ComputeHash(Encoding.UTF8.GetBytes("Grupo-4"));
-                    servicioEncriptadoDES.Key = byteHash;
-                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas
-                    byte[] byteBuff = Convert.FromBase64String(encriptado);
-                    return Encoding.Unicode.GetString(servicioEncriptadoDES.CreateDecryptor().TransformFinalBlock(byteBuff, 0, byteBuff.Length));
+                    servicioEncriptadoDES.Key = byteHash; //Se va a necesitar una llave para poder desencriptar el mensaje
+                    servicioEncriptadoDES.Mode = CipherMode.ECB; //Se elige el modo de descifrado de las contraseñas, para mostrar como debería estar desencriptado (desencripta cada bloque individualmente).
+                    byte[] byteBuff = Convert.FromBase64String(encriptado);//Guardamos la contraseña
+                    return Encoding.Unicode.GetString(servicioEncriptadoDES.CreateDecryptor().TransformFinalBlock(byteBuff, 0, byteBuff.Length)); //Realiza la desencriptación, siguiendo los valores introducidos anteriormente, y el resultado se convierte en un string que será enviado.
                 }
             }
         }

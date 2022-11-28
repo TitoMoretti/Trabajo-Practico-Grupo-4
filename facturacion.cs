@@ -96,7 +96,7 @@ namespace Trabajo_POO_Grupo_4
                     try //Intentará guardar los datos de la factura en el SQL
                     {
                         ConexionSQLFacturas agregar = new ConexionSQLFacturas(); //Creamos una instancia para poder utilizar la clase "ConexiónSQLFacturas.cs", la cual está en "Controladora"
-                        agregar.AgregarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value);  //Mandamos todos los datos de la factura para poder incorporar la misma dentro del SQL
+                        agregar.AgregarFactura(txtNombre.Text, txtApellido.Text, txtUser.Text, TipoTicket, txtCantidadTickets.Text, FechadeIngreso.Value.ToShortDateString());  //Mandamos todos los datos de la factura para poder incorporar la misma dentro del SQL
                         dgvGestionarFacturas.DataSource = agregar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
                     }
                     catch (Exception) //En caso de que no se haya podido guardar los datos por cualquier razón, se mostrará un mensaje de error
@@ -151,7 +151,7 @@ namespace Trabajo_POO_Grupo_4
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             ConexionSQLFacturas eliminar = new ConexionSQLFacturas(); //Creamos una instancia para poder utilizar la clase "ConexiónSQL.cs", la cual está en "Controladora"
-            eliminar.Eliminar(FechadeIngreso.Value); //Mandamos la fecha de ingreso para encontrar la fila que tenga la misma fecha. Al encontrarla, la borrará
+            eliminar.Eliminar(FechadeIngreso.Value.ToShortDateString()); //Mandamos la fecha de ingreso para encontrar la fila que tenga la misma fecha. Al encontrarla, la borrará
             dgvGestionarFacturas.DataSource = eliminar.actualizarlista(); //Pedimos los datos de la tabla del SQL para poder actualizar el DataGridView
             
             //Limpiamos todos los TextBoxs, ComboBox y DateTimePicker
@@ -224,9 +224,11 @@ namespace Trabajo_POO_Grupo_4
         {
             //Condición utilizada para asegurarse que no pueda escribir letras dentro de la Cantidad de Tickets
 
-            if (e.Handled = (char.IsLetter(e.KeyChar) || e.KeyChar != (char)Keys.Back || e.KeyChar != (char)Keys.Space)) //Solo admite Números, el Espacio y el Retroceso
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back)) //Solo admite Números y el Retroceso
             {
                 MessageBox.Show("No se puede escribir letras aquí.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
             }
         }
 
@@ -237,7 +239,7 @@ namespace Trabajo_POO_Grupo_4
             dgvGestionarFacturas.DataSource = actualizar.actualizarlista(); //Actualizamos con los ultimos datos de la base de datos
 
             SaveFileDialog guardar = new SaveFileDialog();
-            guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf"; //Guardamos el archivo en formato de pdf con el nombre de la fecha del día (se puede cambiar)
+            guardar.FileName = "Factura Nagapark " + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf"; //Guardamos el archivo en formato de pdf con el nombre del parque y la fecha del día.
             
             string paginahtml_texto = Properties.Resources.plantilla.ToString(); //Utilizamos la plantilla de html que guardamos en resources
 
@@ -293,6 +295,12 @@ namespace Trabajo_POO_Grupo_4
             {
                 MessageBox.Show("No se pudo descargar el PDF. Por favor, vuelva a intentarlo","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-        } 
+        }
+
+        //Evento realizado para que no puedar cambiar datos desde el DataGridView
+        private void dgvGestionarFacturas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvGestionarFacturas.ReadOnly = true;
+        }
     }
 }

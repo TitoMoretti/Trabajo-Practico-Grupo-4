@@ -14,7 +14,7 @@ namespace Controladora
         private string CadenaConexion = "Data Source=LAPTOP-SANTI;Initial Catalog=Proyecto;Integrated Security=True;Pooling=False"; //Esta cadena nos permitirá establecer una conexión con una Base de Datos, en este caso con LAPTOP-SANTI 
 
         // Agregamos a la base de datos los datos proporcionados
-        public void AgregarFactura(string Nombre, string Apellido, string Usuario, string TipoTicket, string Cantidad, DateTime Fecha) //Subrutina para agregar una factura al SQL
+        public void AgregarFactura(string Nombre, string Apellido, string Usuario, string TipoTicket, string Cantidad, string Fecha) //Subrutina para agregar una factura al SQL
         {
             string Date=Convert.ToString(Fecha); //El valor del DateTime lo guardamos en un string
             using (SqlConnection conn = new SqlConnection(CadenaConexion)) //Nos conectaremos con LAPTOP-SANTI
@@ -28,7 +28,7 @@ namespace Controladora
         }
 
         // Eliminamos una factura utilizando la fecha como identificador
-        public void Eliminar(DateTime Fecha) //Subrutina para eliminar una cuenta del SQL
+        public void Eliminar(string Fecha) //Subrutina para eliminar una cuenta del SQL
         {
             string Date = Convert.ToString(Fecha); //El valor del DateTime lo guardamos en un string
             using (SqlConnection conn = new SqlConnection(CadenaConexion)) //Nos conectaremos con LAPTOP-SANTI
@@ -47,7 +47,7 @@ namespace Controladora
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(CadenaConexion)) //Nos conectaremos con LAPTOP-SANTI
             {
-                SqlDataAdapter da = new SqlDataAdapter("Select * from ListadeFacturas", conn); //Escribimos el comando (Querry) que queremos llevar a cabo en la base de datos, en este caso para poder tomar los valores de una tabla
+                SqlDataAdapter da = new SqlDataAdapter("Select * from ListadeFacturas order by convert(datetime, Fecha, 103) ASC", conn); //Escribimos el comando (Querry) que queremos llevar a cabo en la base de datos, en este caso para poder tomar los valores de una tabla
                 da.SelectCommand.CommandType = CommandType.Text; //Indica como se interpretará el comando anterior para mayor claridad al momento de ejecutarlo en el SQL
                 conn.Open(); //Abre la conexión con el SQL
                 da.Fill(dt); //Obtiene los datos de la tabla
